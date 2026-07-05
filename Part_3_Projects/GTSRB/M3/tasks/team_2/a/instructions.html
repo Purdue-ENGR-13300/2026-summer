@@ -1,0 +1,2017 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>7.1.2. Task 2 &#8212; Purdue University ENGR 13300</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../_static/custom.css?v=c6bace48" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../../../../../_static/documentation_options.js?v=a8e58a58"></script>
+    <script src="../../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Part_3_Projects/GTSRB/M3/tasks/team_2/a/instructions';</script>
+    <script src="../../../../../../_static/custom.js?v=69db6cbe"></script>
+    <link rel="icon" href="../../../../../../_static/avatar.png"/>
+    <link rel="index" title="Index" href="../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../search.html" />
+    <link rel="next" title="7.1.3. Task 3" href="../../team_3/a/instructions.html" />
+    <link rel="prev" title="7.1.1. Task 1" href="../../team_1/a/instructions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../../../_static/logo.png" class="logo__image only-light" alt=""/>
+    <img src="../../../../../../_static/logo.png" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Transforming Ideas to Innovation<br>
+<span class='logo-subtitle'>Autumn 2026</span>
+</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start Here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Part_1_Start_Here/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Part_1_Start_Here/meet_the_team.html">Meet Your Instructional Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Part_1_Start_Here/help_sessions.html">Help Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Part_1_Start_Here/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Part_1_Start_Here/course_software/course_software.html">Course Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Part_1_Start_Here/computer_basics/computer_basics.html">Computer Basics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Development</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/0_overview.html">1. Professional Preparation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/pwl_assignments.html">1.1. West Lafayette</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_1/career_exploration_1.html">1.1.1. Career Exploration 1 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_2/career_exploration_2.html">1.1.2. Career Exploration 2 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_3/career_exploration_3.html">1.1.3. Career Exploration 3 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_4/personal_activity.html">1.1.4. Personal Activity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_5/cultural_experience.html">1.1.5. Cultural Experience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/pin_assignments.html">1.2. Indianapolis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_1/major_exploration_1.html">1.2.1. Major Exploration 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_2/major_exploration_2.html">1.2.2. Major Exploration 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_3/personal_activity_1.html">1.2.3. Personal Activity 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_4/personal_activity_2.html">1.2.4. Personal Activity 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_5/cultural_experience.html">1.2.5. Cultural Experience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/common_assignments.html">1.3. Common</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M1_Professional_Preparation/activities/common_1/resume.html">1.3.1. Resume Preparation</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M2_Information_Literacy/0_overview.html">2. Information Literacy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M2_Information_Literacy/1_pre-class_material.html">2.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M2_Information_Literacy/1.1_materials.html">2.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M2_Information_Literacy/tasks/pre_0/instructions.html">2.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M2_Information_Literacy/2_team_assignments.html">2.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M2_Information_Literacy/tasks/team_1/instructions.html">2.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M3_Teaming/0_overview.html">3. Teaming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M3_Teaming/2_team_assignments.html">3.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M3_Teaming/tasks/team_1/instructions.html">3.1.1. Task 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M3_Teaming/3_ind_assignments.html">3.2. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_2_Professional_Development/M3_Teaming/tasks/ind_1/instructions.html">3.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../M1_Dream_Project/0_overview.html">4. Dream Project</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../M1/0_overview.html">5. Team Project Checkpoint 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../M1/1_pre-class_material.html">5.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/1.1_materials.html">5.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/pre_0/a/instructions.html">5.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../M1/2_team_assignments.html">5.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/team_1/a/instructions.html">5.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/team_2/a/instructions.html">5.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/team_3/a/instructions.html">5.2.3. Task 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M1/tasks/team_4/a/instructions.html">5.2.4. Task 4</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../M2/0_overview.html">6. Team Project Checkpoint 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../M2/1_pre-class_material.html">6.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M2/1.1_materials.html">6.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M2/tasks/pre_0/a/instructions.html">6.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../M2/2_team_assignments.html">6.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M2/tasks/team_1/a/instructions.html">6.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M2/tasks/team_2/a/instructions.html">6.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M2/tasks/team_3/a/instructions.html">6.2.3. Task 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../M2/tasks/team_4/a/instructions.html">6.2.4. Task 4</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../0_overview.html">7. Team Project Checkpoint 3</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../1_team_assignments.html">7.1. Team Assignments</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../team_1/a/instructions.html">7.1.1. Task 1</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">7.1.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../team_3/a/instructions.html">7.1.3. Task 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../team_4/a/instructions.html">7.1.4. Task 4</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../M5_Individual_Project/0_overview.html">8. Individual Project</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../M5_Individual_Project/1_proposal_guidelines.html">8.1. Proposal - 5 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../M5_Individual_Project/2_code_guidelines.html">8.2. Code - 55 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../M5_Individual_Project/3_demo_presentation_guidelines.html">8.3. Demo Presentation - 25 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../M5_Individual_Project/4_report_guidelines.html">8.4. Report - 25 points</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MS Excel</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/0_overview.html">9. <strong class="program">MS Excel</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/1_pre-class_material.html">9.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/1.1_materials.html">9.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/tasks/pre_0/a/instructions.html">9.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/2_team_assignments.html">9.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/tasks/team_1/a/instructions.html">9.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/tasks/team_2/a/instructions.html">9.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/tasks/team_3/a/instructions.html">9.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/3_ind_assignments.html">9.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/tasks/ind_1/a/instructions.html">9.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M1/tasks/ind_2/a/instructions.html">9.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/0_overview.html">10. <strong class="program">MS Excel</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/1_pre-class_material.html">10.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/1.1_materials.html">10.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/tasks/pre_0/a/instructions.html">10.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/2_team_assignments.html">10.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/tasks/team_1/a/instructions.html">10.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/tasks/team_2/a/instructions.html">10.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/tasks/team_3/a/instructions.html">10.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/3_ind_assignments.html">10.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/tasks/ind_1/a/instructions.html">10.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_4_Excel/M2/tasks/ind_2/a/instructions.html">10.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Python</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M1/0_overview.html">11. <strong class="program">Python</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M1/1_pre-class_material.html">11.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M1/1.1_materials.html">11.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M1/tasks/pre_0/a/instructions.html">11.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M1/2_team_assignments.html">11.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M1/tasks/team_1/b/instructions.html">11.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M1/tasks/team_2/a/instructions.html">11.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M1/tasks/team_3/string_comparisons/instructions.html">11.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M1/3_ind_assignments.html">11.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M1/tasks/ind_1/a/instructions.html">11.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M1/tasks/ind_2/series_and_parallel_circuits/instructions.html">11.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M2/0_overview.html">12. <strong class="program">Python</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M2/1_pre-class_material.html">12.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M2/1.1_materials.html">12.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M2/tasks/pre_0/a/instructions.html">12.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M2/2_team_assignments.html">12.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M2/tasks/team_1/a/instructions.html">12.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M2/tasks/team_2/a/instructions.html">12.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M2/tasks/team_3/escape_velocity/instructions.html">12.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M2/3_ind_assignments.html">12.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M2/tasks/ind_1/a/instructions.html">12.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M2/tasks/ind_2/a/instructions.html">12.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M3/0_overview.html">13. <strong class="program">Python</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M3/1_pre-class_material.html">13.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M3/1.1_materials.html">13.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M3/tasks/pre_0/a/instructions.html">13.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M3/2_team_assignments.html">13.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M3/tasks/team_1/a/instructions.html">13.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M3/tasks/team_2/a/instructions.html">13.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M3/tasks/team_3/a/instructions.html">13.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M3/3_ind_assignments.html">13.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M3/tasks/ind_1/llms/instructions.html">13.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M3/tasks/ind_2/a/instructions.html">13.3.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M3/tasks/ind_1/genotype/instructions.html">13.3.3. Task 3 (Bonus)</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M4/0_overview.html">14. <strong class="program">Python</strong> 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M4/1_pre-class_material.html">14.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M4/1.1_materials.html">14.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M4/tasks/pre_0/a/instructions.html">14.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M4/2_team_assignments.html">14.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M4/tasks/team_1/a/instructions.html">14.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M4/tasks/team_2/a/instructions.html">14.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M4/tasks/team_3/a/instructions.html">14.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M4/3_ind_assignments.html">14.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M4/tasks/ind_1/ngram_generation/instructions.html">14.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M4/tasks/ind_2/ngram_analysis/instructions.html">14.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M5/0_overview.html">15. <strong class="program">Python</strong> 5</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M5/1_pre-class_material.html">15.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M5/1.1_materials.html">15.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M5/tasks/pre_0/linearized_rgb_intensity/instructions.html">15.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M5/2_team_assignments.html">15.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M5/tasks/team_1/linearized_rgb_intensity_reflection/instructions.html">15.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M5/tasks/team_2/a/instructions.html">15.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M5/tasks/team_3/a/instructions.html">15.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_5_Python/M5/3_ind_assignments.html">15.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M5/tasks/ind_1/rgb_to_luminance/instructions.html">15.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_5_Python/M5/tasks/ind_2/a/instructions.html">15.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MATLAB</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/0_overview.html">16. <strong class="program">MATLAB</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/1_pre-class_material.html">16.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/1.1_materials.html">16.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/tasks/pre_0/a/instructions.html">16.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/2_team_assignments.html">16.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/tasks/team_1/a/instructions.html">16.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/tasks/team_2/a/instructions.html">16.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/tasks/team_3/a/instructions.html">16.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/3_ind_assignments.html">16.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/tasks/ind_1/a/instructions.html">16.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M1/tasks/ind_2/a/instructions.html">16.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/0_overview.html">17. <strong class="program">MATLAB</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/1_pre-class_material.html">17.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/1.1_materials.html">17.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/tasks/pre_0/a/instructions.html">17.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/2_team_assignments.html">17.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/tasks/team_1/a/instructions.html">17.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/tasks/team_2/a/instructions.html">17.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/tasks/team_3/a/instructions.html">17.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/3_ind_assignments.html">17.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/tasks/ind_1/a/instructions.html">17.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M2/tasks/ind_2/a/instructions.html">17.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/0_overview.html">18. <strong class="program">MATLAB</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/1_pre-class_material.html">18.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/1.1_materials.html">18.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/tasks/pre_0/a/instructions.html">18.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/2_team_assignments.html">18.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/tasks/team_1/a/instructions.html">18.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/tasks/team_2/a/instructions.html">18.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/tasks/team_3/a/instructions.html">18.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/3_ind_assignments.html">18.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/tasks/ind_1/a/instructions.html">18.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../../Part_6_MATLAB/M3/tasks/ind_2/a/instructions.html">18.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Appendices/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Appendices/employment.html">Student Employment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../Appendices/contributors.html">Contributors</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/Purdue-ENGR-13300/2026-spring/issues/new?title=Issue%20on%20page%20%2FPart_3_Projects/GTSRB/M3/tasks/team_2/a/instructions.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Task 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-concept-what-is-logistic-regression">The concept - What is Logistic Regression?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works-step-by-step">How It Works Step-by-Step</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-combine-all-features-the-linear-part">Step 1: Combine All Features (The Linear Part)</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-convert-to-probability-the-sigmoid-function">Step 2: Convert to Probability (The Sigmoid Function)</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-make-the-final-decision">Step 3: Make the Final Decision</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-loss-function">Understanding the Loss Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-a-loss-function">Why Do We Need a Loss Function?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#binary-cross-entropy-loss-explained">Binary Cross-Entropy Loss Explained</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#for-a-single-example">For a Single Example</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#average-loss-for-all-examples">Average Loss for All Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-with-gradient-descent-step-by-step">Training with Gradient Descent - Step by Step</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-gradient-descent">What is Gradient Descent?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-training-process">The Training Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-initialize-parameters">Step 1: Initialize Parameters</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-the-training-loop">Step 2: The Training Loop</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-when-to-stop-training">Step 3: When to Stop Training</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-metrics-how-good-is-our-model">Evaluation Metrics - How Good is Our Model?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy">Accuracy</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-rate">Error Rate</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-both-metrics">Why Both Metrics?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-instructions">Task Instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-sigmoid-function">Step 1: Sigmoid Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-predict-probabilities">Step 2: Predict Probabilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-predict-labels">Step 3: Predict Labels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-compute-loss-and-gradients">Step 4: Compute Loss and Gradients</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-train-logistic-regression">Step 5: Train Logistic Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-evaluate-logistic-regression">Step 6: Evaluate Logistic Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-main-function">Step 7: Main Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-notes">Implementation Notes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperparameter-tuning">Hyperparameter Tuning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-training-progress">Monitoring Training Progress</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-pitfalls-and-solutions">Common Pitfalls and Solutions</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging-your-implementation">Debugging Your Implementation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-test-cases">Simple Test Cases</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sanity-checks">Sanity Checks</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-output">Sample Output</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p><span class="raw-html"><div class="d-none"></span></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\newcommand\blank{~\underline{\hspace{1.2cm}}~}\\% Bold symbols (vectors)
+\newcommand\bs[1]{\mathbf{#1}}\\% Differential
+\newcommand\dd[2][]{\mathrm{d}^{#1}{#2}}  % use as \dd, \dd{x}, or \dd[2]{x}\\% Poor man's siunitx
+\newcommand\unit[1]{\mathrm{#1}}
+\newcommand\num[1]{#1}
+\newcommand\qty[2]{#1~\unit{#2}}\\\newcommand\per{/}
+\newcommand\squared{{}^2}
+\newcommand\cubed{{}^3}
+%
+% Scale
+\newcommand\milli{\unit{m}}
+\newcommand\centi{\unit{c}}
+\newcommand\kilo{\unit{k}}
+\newcommand\mega{\unit{M}}
+%
+% Percent
+\newcommand\percent{\unit{{\kern-4mu}\%}}
+%
+% Angle
+\newcommand\radian{\unit{rad}}
+\newcommand\degree{\unit{{\kern-4mu}^\circ}}
+%
+% Time
+\newcommand\second{\unit{s}}
+\newcommand\s{\second}
+\newcommand\minute{\unit{min}}
+\newcommand\hour{\unit{h}}
+%
+% Distance
+\newcommand\meter{\unit{m}}
+\newcommand\m{\meter}
+\newcommand\inch{\unit{in}}
+\newcommand\foot{\unit{ft}}
+%
+% Force
+\newcommand\newton{\unit{N}}
+\newcommand\kip{\unit{kip}} % kilopound in &quot;freedom&quot; units - edit made by Sri
+%
+% Mass
+\newcommand\gram{\unit{g}}
+\newcommand\g{\gram}
+\newcommand\kilogram{\unit{kg}}
+\newcommand\kg{\kilogram}
+\newcommand\grain{\unit{grain}}
+\newcommand\ounce{\unit{oz}}
+\newcommand\pound{\unit{lbs}}
+%
+% Temperature
+\newcommand\kelvin{\unit{K}}
+\newcommand\K{\kelvin}
+\newcommand\celsius{\unit{{\kern-4mu}^\circ C}}
+\newcommand\C{\celsius}
+\newcommand\fahrenheit{\unit{{\kern-4mu}^\circ F}}
+\newcommand\F{\fahrenheit}
+%
+% Area
+\newcommand\sqft{\unit{sq\,\foot}}  % square foot
+%
+% Volume
+\newcommand\liter{\unit{L}}
+\newcommand\gallon{\unit{gal}}
+%
+% Frequency
+\newcommand\hertz{\unit{Hz}}
+\newcommand\rpm{\unit{rpm}}
+%
+% Voltage
+\newcommand\volt{\unit{V}}
+\newcommand\V{\volt}
+\newcommand\millivolt{\milli\volt}
+\newcommand\mV{\milli\volt}
+\newcommand\kilovolt{\kilo\volt}
+\newcommand\kV{\kilo\volt}
+%
+% Current
+\newcommand\ampere{\unit{A}}
+\newcommand\A{\ampere}
+\newcommand\milliampereA{\milli\ampere}
+\newcommand\mA{\milli\ampere}
+\newcommand\kiloampereA{\kilo\ampere}
+\newcommand\kA{\kilo\ampere}
+%
+% Resistance
+\newcommand\ohm{\Omega}
+\newcommand\milliohm{\milli\ohm}
+\newcommand\kiloohm{\kilo\ohm} % correct SI spelling
+\newcommand\kilohm{\kilo\ohm} % &quot;American&quot; spelling used in siunitx
+\newcommand\megaohm{\mega\ohm} % correct SI spelling
+\newcommand\megohm{\mega\ohm} % &quot;American&quot; spelling used in siunitx
+%
+% Capacitance
+\newcommand\farad{\unit{F}}
+\newcommand\F{\farad}
+\newcommand\microfarad{\micro\farad}
+\newcommand\muF{\micro\farad}
+%
+% Inductance
+\newcommand\henry{\unit{H}}
+\newcommand\H{\henry}
+\newcommand\millihenry{\milli\henry}
+\newcommand\mH{\milli\henry}
+%
+% Power
+\newcommand\watt{\unit{W}}
+\newcommand\W{\watt}
+\newcommand\milliwatt{\milli\watt}
+\newcommand\mW{\milli\watt}
+\newcommand\kilowatt{\kilo\watt}
+\newcommand\kW{\kilo\watt}
+%
+% Energy
+\newcommand\joule{\unit{J}}
+\newcommand\J{\joule}
+%
+% Composite units
+%
+% Torque
+\newcommand\ozin{\unit{\ounce}\,\unit{in}}
+\newcommand\newtonmeter{\unit{\newton\,\meter}}
+%
+% Pressure
+\newcommand\psf{\unit{psf}}  % pounds per square foot
+\newcommand\pcf{\unit{pcf}}  % pounds per cubic foot
+\newcommand\pascal{\unit{Pa}}
+\newcommand\Pa{\pascal}
+\newcommand\ksi{\unit{ksi}} % kilopound per square inch
+\newcommand\bar{\unit{bar}}
+\end{aligned}\end{align} \]</div>
+<p><span class="raw-html"></div></span></p>
+<p>Jul 04, 2026 | 2975 words | 30 min read</p>
+<section class="tex2jax_ignore mathjax_ignore" id="task-2">
+<span id="tp-m3-team-task-2"></span><h1><span class="section-number">7.1.2. </span>Task 2<a class="headerlink" href="#task-2" title="Link to this heading">#</a></h1>
+<section id="learning-objectives">
+<h2>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Understand the concept of binary logistic regression for classification.</p></li>
+<li><p>Implement the sigmoid function and logistic regression prediction.</p></li>
+<li><p>Train the model using gradient descent to minimize binary cross-entropy loss.</p></li>
+<li><p>Evaluate performance using accuracy and error rate on train/val/test sets.</p></li>
+</ul>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>In this task, you will <strong>build and train a binary logistic regression model from scratch
+using NumPy</strong> to classify traffic signs as either:</p>
+<ul class="simple">
+<li><p><strong>Left turn ahead</strong> (label = 1)</p></li>
+<li><p><strong>Deer warning</strong> (label = 0)</p></li>
+</ul>
+<p>The model will use the features you have extracted earlier (e.g., hue mean, hue standard
+deviation, circle presence, number of lines, etc.) into <code class="file docutils literal notranslate"><span class="pre">img_features.csv</span></code>.</p>
+<p>You will implement the logistic regression algorithm, train it on the training set, and
+evaluate its performance on the validation and test sets.</p>
+<section id="the-concept-what-is-logistic-regression">
+<h3>The concept - What is Logistic Regression?<a class="headerlink" href="#the-concept-what-is-logistic-regression" title="Link to this heading">#</a></h3>
+<p>Think of logistic regression as a way to make “yes/no” decisions based on multiple
+pieces of information.  Instead of giving you a simple yes or no, it gives you a
+<strong>probability</strong> (a number between 0 and 1) that represents how confident it is about the
+answer.  Then, you can choose a threshold (like 0.5) to convert that probability into a
+final decision.</p>
+<section id="how-it-works-step-by-step">
+<h4>How It Works Step-by-Step<a class="headerlink" href="#how-it-works-step-by-step" title="Link to this heading">#</a></h4>
+<section id="step-1-combine-all-features-the-linear-part">
+<h5>Step 1: Combine All Features (The Linear Part)<a class="headerlink" href="#step-1-combine-all-features-the-linear-part" title="Link to this heading">#</a></h5>
+<p>First, we take all the features and combine them using weights (like importance scores)
+and a bias term.  This gives us a single number (<span class="math notranslate nohighlight">\(z\)</span>) that represents the combined
+information from all features:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-linear-combination">
+<span class="eqno">(7.1)<a class="headerlink" href="#equation-eq-m3-team-2-linear-combination" title="Link to this equation">#</a></span>\[z
+= w_1 \times \text{feature}_1
++ w_2 \times \text{feature}_2
++ ...
++ w_n \times \text{feature}_n
++ b\]</div>
+<p><strong>Breaking this down:</strong></p>
+<ul class="simple">
+<li><p>Each feature gets multiplied by a weight (<span class="math notranslate nohighlight">\(w_1\)</span>, <span class="math notranslate nohighlight">\(w_2\)</span>, etc.) where
+<span class="math notranslate nohighlight">\(w_i \in \mathbb{R}\)</span> (can be positive, negative, or zero).</p></li>
+<li><p>The magnitudes of the weights tell us how important each feature is.</p></li>
+<li><p>We add a scalar “bias” term (<span class="math notranslate nohighlight">\(b\)</span>) where <span class="math notranslate nohighlight">\(b \in \mathbb{R}\)</span>.  This bias can
+be thought of as the model’s default prediction when it has no information from the
+features.</p></li>
+<li><p>The resulting “logit” or “score” (<span class="math notranslate nohighlight">\(z\)</span>) can be any real number (positive,
+negative, or zero).  This is just a linear combination of the features and parameters,
+which is why it’s called the “linear” part of logistic regression.</p></li>
+</ul>
+<p><strong>Example with traffic signs:</strong>
+If we have three features like:</p>
+<ul class="simple">
+<li><p>Hue mean = 0.6</p></li>
+<li><p>Number of lines = 8</p></li>
+<li><p>Big circle present = 1 (yes)</p></li>
+</ul>
+<p>And if the weights are:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(w_1 = 2.5\)</span> (hue is very important)</p></li>
+<li><p><span class="math notranslate nohighlight">\(w_2 = 0.8\)</span> (lines matter somewhat)</p></li>
+<li><p><span class="math notranslate nohighlight">\(w_3 = 1.2\)</span> (circle presence is important)</p></li>
+<li><p><span class="math notranslate nohighlight">\(b = -1.0\)</span> (overall bias)</p></li>
+</ul>
+<p>Then:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-linear-combination-example">
+<span class="eqno">(7.2)<a class="headerlink" href="#equation-eq-m3-team-2-linear-combination-example" title="Link to this equation">#</a></span>\[z = 2.5\times0.6 + 0.8\times8 + 1.2\times1 + (-1.0) = 1.5 + 6.4 + 1.2 - 1.0 = 8.1\]</div>
+</section>
+<section id="step-2-convert-to-probability-the-sigmoid-function">
+<h5>Step 2: Convert to Probability (The Sigmoid Function)<a class="headerlink" href="#step-2-convert-to-probability-the-sigmoid-function" title="Link to this heading">#</a></h5>
+<p>The value <span class="math notranslate nohighlight">\(z\)</span> can be any real number, but we want a probability between 0 and 1 so
+that we can interpret it as the likelihood of class 1.  This is where the
+<strong>sigmoid function</strong> is useful.  It squashes any real number into the range
+<span class="math notranslate nohighlight">\((0, 1)\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-sigmoid">
+<span class="eqno">(7.3)<a class="headerlink" href="#equation-eq-m3-team-2-sigmoid" title="Link to this equation">#</a></span>\[\sigma(z) = \frac{1}{1 + e^{-z}}\]</div>
+<figure class="align-default" id="fig-m3-team-task-2-sigmoid-curve">
+<img alt="Graph of the sigmoid function S-curve from negative to positive x." src="../../../../../../_images/sigmoid_curve.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 7.1 </span><span class="caption-text">Sigmoid function</span><a class="headerlink" href="#fig-m3-team-task-2-sigmoid-curve" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p><strong>What does this do?</strong></p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(z\)</span> is very large and positive, <span class="math notranslate nohighlight">\(\sigma(z)\)</span> approaches <span class="math notranslate nohighlight">\(1\)</span>
+(<span class="math notranslate nohighlight">\(\qty{100}{\percent}\)</span> probability)</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(z\)</span> is very large and negative, <span class="math notranslate nohighlight">\(\sigma(z)\)</span> approaches <span class="math notranslate nohighlight">\(0\)</span>
+(<span class="math notranslate nohighlight">\(\qty{0}{\percent}\)</span> probability)</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(z = 0\)</span>, then <span class="math notranslate nohighlight">\(\sigma(z) = 0.5\)</span> (<span class="math notranslate nohighlight">\(\qty{50}{\percent}\)</span>
+probability)</p></li>
+</ul>
+<p><strong>Why the sigmoid function?</strong></p>
+<ul class="simple">
+<li><p>It is smooth and differentiable, which is required for gradient-based training.</p></li>
+<li><p>It naturally maps any real number to the range <span class="math notranslate nohighlight">\((0, 1)\)</span>.</p></li>
+<li><p>Its S-shape is symmetric around <span class="math notranslate nohighlight">\(0.5\)</span>, giving equivalent probability magnitudes
+for equal positive and negative <span class="math notranslate nohighlight">\(z\)</span> values.</p></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(z = 8.1\)</span> (from our traffic sign example):</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\sigma(8.1) = 1/(1 + e^{-8.1}) = 1/(1 + 0.0003) \approx 0.9997\)</span></p></li>
+<li><p>This means a <span class="math notranslate nohighlight">\(\qty{99.97}{\percent}\)</span> predicted probability of a left turn
+sign.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="step-3-make-the-final-decision">
+<h5>Step 3: Make the Final Decision<a class="headerlink" href="#step-3-make-the-final-decision" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(\sigma(z) \geq 0.5\)</span>, predict class 1 (left turn sign)</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\sigma(z) &lt; 0.5\)</span>, predict class 0 (deer warning sign)</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="understanding-the-loss-function">
+<h3>Understanding the Loss Function<a class="headerlink" href="#understanding-the-loss-function" title="Link to this heading">#</a></h3>
+<section id="why-do-we-need-a-loss-function">
+<h4>Why Do We Need a Loss Function?<a class="headerlink" href="#why-do-we-need-a-loss-function" title="Link to this heading">#</a></h4>
+<p>The loss function tells us how “wrong” our predictions are.  Minimizing this loss value
+helps us make our model better.  If we craft a differentiable loss function, we can use
+the gradient to tweak the parameters (weights and bias) and reduce this loss.  By doing
+this repeatedly, we can minimize the loss and get a better model.</p>
+<p>Since we’re dealing with probabilities, we use a specific loss function called <strong>binary
+cross-entropy loss</strong> (also known as log loss).</p>
+</section>
+<section id="binary-cross-entropy-loss-explained">
+<h4>Binary Cross-Entropy Loss Explained<a class="headerlink" href="#binary-cross-entropy-loss-explained" title="Link to this heading">#</a></h4>
+<section id="for-a-single-example">
+<h5>For a Single Example<a class="headerlink" href="#for-a-single-example" title="Link to this heading">#</a></h5>
+<p>The loss depends on the true label (<span class="math notranslate nohighlight">\(y\)</span>) and our predicted probability
+(<span class="math notranslate nohighlight">\(\hat{y}\)</span>):</p>
+<p><strong>Case 1: True label is 1 (left turn sign)</strong></p>
+<ul class="simple">
+<li><p>Predicting <span class="math notranslate nohighlight">\(\hat{y} = 0.9\)</span> (90% confident) gives low loss.</p></li>
+<li><p>Predicting <span class="math notranslate nohighlight">\(\hat{y} = 0.1\)</span> (10% confident) gives high loss.</p></li>
+</ul>
+<p><strong>Case 2: True label is 0 (deer warning sign)</strong></p>
+<ul class="simple">
+<li><p>Predicting <span class="math notranslate nohighlight">\(\hat{y} = 0.1\)</span> (10% confident it is class 1) gives low loss.</p></li>
+<li><p>Predicting <span class="math notranslate nohighlight">\(\hat{y} = 0.9\)</span> (90% confident it is class 1) gives high loss.</p></li>
+</ul>
+<p><strong>Mathematical Formula for a Single Example:</strong></p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-single-example-loss">
+<span class="eqno">(7.4)<a class="headerlink" href="#equation-eq-m3-team-2-single-example-loss" title="Link to this equation">#</a></span>\[\begin{split}\text{loss} =
+\begin{cases}
+-\log(\hat{y}) &amp; \text{when } y = 1 \\
+-\log(1 - \hat{y}) &amp; \text{when } y = 0
+\end{cases}\end{split}\]</div>
+<p><strong>Why use the log function?</strong></p>
+<ul class="simple">
+<li><p>The log function grows very large as <span class="math notranslate nohighlight">\(\hat{y}\)</span> approaches <span class="math notranslate nohighlight">\(0\)</span> (for
+<span class="math notranslate nohighlight">\(y=1\)</span>) or <span class="math notranslate nohighlight">\(1\)</span> (for <span class="math notranslate nohighlight">\(y=0\)</span>), <em>which heavily penalizes confident wrong
+predictions</em>.  Try this yourself with a calculator.</p></li>
+<li><p>It provides a smooth gradient to work with during training.</p></li>
+</ul>
+<p><strong>Why the negative sign?</strong></p>
+<ul class="simple">
+<li><p>When <span class="math notranslate nohighlight">\(\hat{y}\)</span> is close to <span class="math notranslate nohighlight">\(1\)</span> and <span class="math notranslate nohighlight">\(y = 1\)</span>, <span class="math notranslate nohighlight">\(\log(\hat{y})\)</span> is
+close to <span class="math notranslate nohighlight">\(0\)</span>, so <span class="math notranslate nohighlight">\(-\log(\hat{y})\)</span> is close to <span class="math notranslate nohighlight">\(0\)</span> (low loss).</p></li>
+<li><p>When <span class="math notranslate nohighlight">\(\hat{y}\)</span> is close to <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(y = 1\)</span>, <span class="math notranslate nohighlight">\(\log(\hat{y})\)</span> is
+very negative, so <span class="math notranslate nohighlight">\(-\log(\hat{y})\)</span> is very large (high loss).</p></li>
+<li><p><em>The negative sign ensures that better predictions give lower loss values.</em></p></li>
+</ul>
+</section>
+<section id="average-loss-for-all-examples">
+<h5>Average Loss for All Examples<a class="headerlink" href="#average-loss-for-all-examples" title="Link to this heading">#</a></h5>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-binary-cross-entropy-loss">
+<span class="eqno">(7.5)<a class="headerlink" href="#equation-eq-m3-team-2-binary-cross-entropy-loss" title="Link to this equation">#</a></span>\[L(w,b) =
+-\frac{1}{m} \sum_{i=1}^m
+\left[
+  y^{(i)} \times \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \times \log(1 - \hat{y}^{(i)})
+\right]\]</div>
+<p><strong>Breaking this down:</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(L(w,b)\)</span> is the average loss across all examples (a single real number).  We
+write the parameters <span class="math notranslate nohighlight">\((w, b)\)</span> explicitly to emphasize that this loss depends on
+the current model weights and bias.</p></li>
+<li><p><span class="math notranslate nohighlight">\(m\)</span> is the number of examples.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{y}^{(i)}\)</span> is the predicted probability for example <span class="math notranslate nohighlight">\(i\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(y^{(i)}\)</span> is the true class label for example <span class="math notranslate nohighlight">\(i\)</span> (<span class="math notranslate nohighlight">\(0\)</span> or
+<span class="math notranslate nohighlight">\(1\)</span>).</p></li>
+<li><p>For each example <span class="math notranslate nohighlight">\(i\)</span>:</p>
+<ul>
+<li><p>If <span class="math notranslate nohighlight">\(y^{(i)} = 1\)</span>: contribute <span class="math notranslate nohighlight">\(\log(\hat{y}^{(i)})\)</span> to the sum.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(y^{(i)} = 0\)</span>: contribute <span class="math notranslate nohighlight">\(\log(1 - \hat{y}^{(i)})\)</span> to the sum.</p></li>
+</ul>
+</li>
+<li><p>The negative sign in front converts the (negative) log values into a positive loss.</p></li>
+<li><p>The result is one number representing how well the current parameters fit the training
+data.  The goal of training is to find <span class="math notranslate nohighlight">\((w, b)\)</span> that minimize this loss.</p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>The binary cross-entropy loss is also called “log loss” and is the standard loss
+function for binary classification problems.  It heavily penalizes confident wrong
+predictions.</p>
+<p>Notice how this loss function, when accumulated over all examples, does not need an if
+statement.  Multiplication by <span class="math notranslate nohighlight">\(0\)</span> only adds one of the two individual loss terms.</p>
+<p>Take a close look (inside the square parentheses) to understand why, for each example,
+one of the terms will be zero and the other will contribute to the loss.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="training-with-gradient-descent-step-by-step">
+<h3>Training with Gradient Descent - Step by Step<a class="headerlink" href="#training-with-gradient-descent-step-by-step" title="Link to this heading">#</a></h3>
+<section id="what-is-gradient-descent">
+<h4>What is Gradient Descent?<a class="headerlink" href="#what-is-gradient-descent" title="Link to this heading">#</a></h4>
+<p>Imagine you’re on a hill and want to get to the bottom.  You look around to see which
+direction is downhill, take a step in that direction, and repeat.  Gradient descent
+works the same way - it finds the direction that makes the loss smaller and moves in
+that direction.</p>
+</section>
+<section id="the-training-process">
+<h4>The Training Process<a class="headerlink" href="#the-training-process" title="Link to this heading">#</a></h4>
+<section id="step-1-initialize-parameters">
+<span id="tp-m3-team-task-2-init-params"></span><h5>Step 1: Initialize Parameters<a class="headerlink" href="#step-1-initialize-parameters" title="Link to this heading">#</a></h5>
+<ul class="simple">
+<li><p><strong>Weights (<span class="math notranslate nohighlight">\(w\)</span>)</strong>: Start with small random numbers (<span class="math notranslate nohighlight">\([-0.1, 0.1]\)</span>).</p>
+<ul>
+<li><p><em>Why random?</em>  If all weights start at zero, every feature contributes equally and
+the model cannot break the symmetry during training.</p></li>
+<li><p><em>Why small?</em>  Large initial values can cause the loss to oscillate and make training
+unstable.</p></li>
+</ul>
+</li>
+<li><p><strong>Bias (<span class="math notranslate nohighlight">\(b\)</span>)</strong>: Start at <span class="math notranslate nohighlight">\(0\)</span>.</p>
+<ul>
+<li><p><em>Why zero?</em>  Zero is a neutral starting point; the model will learn the appropriate
+offset during training.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="step-2-the-training-loop">
+<span id="tp-m3-team-task-2-update-params"></span><h5>Step 2: The Training Loop<a class="headerlink" href="#step-2-the-training-loop" title="Link to this heading">#</a></h5>
+<p>Repeat these steps for several iterations:</p>
+<p><strong>A. Make Predictions (Forward Pass)</strong></p>
+<ul>
+<li><p>Use the current <span class="math notranslate nohighlight">\(w\)</span> and <span class="math notranslate nohighlight">\(b\)</span> to compute <span class="math notranslate nohighlight">\(\hat{y}\)</span> for all examples:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-forward-pass-single-example">
+<span class="eqno">(7.6)<a class="headerlink" href="#equation-eq-m3-team-2-forward-pass-single-example" title="Link to this equation">#</a></span>\[\hat{y}^{(i)} = \sigma(w \cdot x^{(i)} + b)\]</div>
+</li>
+<li><p>In this formula:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\hat{y}^{(i)}\)</span> is the predicted <em>probability</em> for example <span class="math notranslate nohighlight">\(i\)</span>, not the
+final class label.</p></li>
+<li><p><span class="math notranslate nohighlight">\(w \cdot x^{(i)}\)</span> is the dot product of the weight vector
+(shape <span class="math notranslate nohighlight">\((n,)\)</span>) and the feature vector for example <span class="math notranslate nohighlight">\(i\)</span>
+(shape <span class="math notranslate nohighlight">\((n,)\)</span>), producing a scalar.</p></li>
+<li><p>Adding the bias term <span class="math notranslate nohighlight">\(b\)</span> gives the combined score, which the sigmoid function
+<span class="math notranslate nohighlight">\(\sigma\)</span> then converts to a probability.</p></li>
+</ul>
+</li>
+<li><p>For all examples at once, using matrix operations:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-forward-pass-all-examples">
+<span class="eqno">(7.7)<a class="headerlink" href="#equation-eq-m3-team-2-forward-pass-all-examples" title="Link to this equation">#</a></span>\[\hat{y} = \sigma(X \cdot w + b)\]</div>
+</li>
+<li><p>In this formula:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(X\)</span> is the full feature matrix (shape <span class="math notranslate nohighlight">\((m, n)\)</span>).</p></li>
+<li><p><span class="math notranslate nohighlight">\(w\)</span> is the weight vector (shape <span class="math notranslate nohighlight">\((n,)\)</span>).</p></li>
+<li><p><span class="math notranslate nohighlight">\(X \cdot w\)</span> yields a vector of shape <span class="math notranslate nohighlight">\((m,)\)</span> containing the combined
+score for each example.</p></li>
+<li><p>The scalar <span class="math notranslate nohighlight">\(b\)</span> is broadcast and added to every element.</p></li>
+<li><p>Applying <span class="math notranslate nohighlight">\(\sigma\)</span> element-wise gives the predicted probability for every
+example.</p></li>
+</ul>
+</li>
+<li><p>This step is called the “forward pass” because data flows forward through the model to
+produce predictions.</p></li>
+</ul>
+<p><strong>B. Calculate Loss</strong></p>
+<ul class="simple">
+<li><p>Compute the loss for the current predictions using
+<a class="reference internal" href="#equation-eq-m3-team-2-binary-cross-entropy-loss">(7.5)</a>.  The result is a single scalar
+representing how well the model fits the data with the current parameters.</p></li>
+</ul>
+<p><strong>C. Calculate Gradients (Backward Pass)</strong></p>
+<p>The gradient measures how much the loss changes when each parameter is adjusted
+slightly.  Compute:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-gradient-wrt-weights">
+<span class="eqno">(7.8)<a class="headerlink" href="#equation-eq-m3-team-2-gradient-wrt-weights" title="Link to this equation">#</a></span>\[\frac{\partial L}{\partial w} = \frac{1}{m} \times [X^T \cdot (\hat{y} - y)]\]</div>
+<p><span class="math notranslate nohighlight">\(\frac{\partial L}{\partial w}\)</span> is a vector with the same shape as <span class="math notranslate nohighlight">\(w\)</span>
+(shape <span class="math notranslate nohighlight">\((n,)\)</span>).  Element <span class="math notranslate nohighlight">\(j\)</span> is the rate of change of the loss with respect
+to weight <span class="math notranslate nohighlight">\(w_j\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-gradient-wrt-bias">
+<span class="eqno">(7.9)<a class="headerlink" href="#equation-eq-m3-team-2-gradient-wrt-bias" title="Link to this equation">#</a></span>\[\frac{\partial L}{\partial b} = \frac{1}{m} \sum_{i=1}^m (\hat{y}^{(i)} - y^{(i)})\]</div>
+<p>Since <span class="math notranslate nohighlight">\(b\)</span> is a scalar, <span class="math notranslate nohighlight">\(\frac{\partial L}{\partial b}\)</span> is also a scalar.</p>
+<p><strong>Symbol reference:</strong></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\frac{\partial L}{\partial w}\)</span>: rate of change of the loss with respect to
+each weight (vector, shape <span class="math notranslate nohighlight">\((n,)\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\partial L}{\partial b}\)</span>: rate of change of the loss with respect to the
+bias (scalar)</p></li>
+<li><p><span class="math notranslate nohighlight">\(X^T\)</span>: transpose of the feature matrix (shape <span class="math notranslate nohighlight">\((n, m)\)</span>)</p></li>
+<li><p><span class="math notranslate nohighlight">\((\hat{y} - y)\)</span>: prediction error vector (shape <span class="math notranslate nohighlight">\((m,)\)</span>)</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">Hint</p>
+<p>These gradient formulas come from applying the chain rule of calculus; the full
+derivation is beyond the scope of this course.  Intuitively, <span class="math notranslate nohighlight">\((\hat{y} - y)\)</span> is
+the prediction error for each example, and multiplying by <span class="math notranslate nohighlight">\(X^T\)</span> accumulates how
+much each feature contributed to that error across all examples.</p>
+</div>
+<p><strong>D. Update Parameters</strong>
+Move in the direction that reduces the loss:</p>
+<p>For each weight <span class="math notranslate nohighlight">\(w_j\)</span> where <span class="math notranslate nohighlight">\(j \in \{1, 2, ..., n\}\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-weight-update">
+<span class="eqno">(7.10)<a class="headerlink" href="#equation-eq-m3-team-2-weight-update" title="Link to this equation">#</a></span>\[w_j = w_j - \alpha \times \frac{\partial L}{\partial w_j}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(w_j\)</span> is the <span class="math notranslate nohighlight">\(j\)</span>-th weight (a scalar).</p></li>
+<li><p><span class="math notranslate nohighlight">\(\frac{\partial L}{\partial w_j}\)</span> is the <span class="math notranslate nohighlight">\(j\)</span>-th element of the gradient
+vector <span class="math notranslate nohighlight">\(\frac{\partial L}{\partial w}\)</span>.</p></li>
+</ul>
+<p>Update the bias similarly:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-bias-update">
+<span class="eqno">(7.11)<a class="headerlink" href="#equation-eq-m3-team-2-bias-update" title="Link to this equation">#</a></span>\[b = b - \alpha \times \frac{\partial L}{\partial b}\]</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>In these update rules, the left side is the new value of the parameter and the right
+side is the old value minus a step in the direction of steepest descent.  We subtract
+because the gradient points uphill; moving opposite to it reduces the loss.  Imagine
+standing on a hillside: the gradient tells you which direction is steepest uphill, so
+you take a step in the opposite direction to go downhill.  The learning rate
+<span class="math notranslate nohighlight">\(\alpha\)</span> controls the step size.</p>
+</div>
+<p><strong>What is <span class="math notranslate nohighlight">\(\alpha\)</span> (alpha)?</strong></p>
+<ul class="simple">
+<li><p>This is the <strong>learning rate</strong>: the step size taken per iteration.</p></li>
+<li><p>Use <span class="math notranslate nohighlight">\(\alpha = 0.01\)</span> for your submission.  You may experiment with other values,
+but document your choice and reasoning in your report.</p></li>
+</ul>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>If the learning rate is too high, the loss may oscillate or diverge.  If it is too low,
+training will be very slow.  Start with <span class="math notranslate nohighlight">\(0.01\)</span> and adjust based on the loss curve.</p>
+</div>
+</section>
+<section id="step-3-when-to-stop-training">
+<h5>Step 3: When to Stop Training<a class="headerlink" href="#step-3-when-to-stop-training" title="Link to this heading">#</a></h5>
+<p>Common stopping criteria:</p>
+<ul class="simple">
+<li><p><strong>Maximum iterations reached</strong>: the most common criterion for simplicity</p></li>
+<li><p><strong>Loss change is below a threshold</strong>: no meaningful improvement</p></li>
+<li><p><strong>Loss is sufficiently small</strong>: model is already accurate enough</p></li>
+</ul>
+<p>For this task, use only the first criterion (fixed number of iterations).  Set the
+iteration count to 5000 for your final submission.</p>
+</section>
+</section>
+</section>
+<section id="evaluation-metrics-how-good-is-our-model">
+<h3>Evaluation Metrics - How Good is Our Model?<a class="headerlink" href="#evaluation-metrics-how-good-is-our-model" title="Link to this heading">#</a></h3>
+<section id="accuracy">
+<h4>Accuracy<a class="headerlink" href="#accuracy" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-accuracy">
+<span class="eqno">(7.12)<a class="headerlink" href="#equation-eq-m3-team-2-accuracy" title="Link to this equation">#</a></span>\[\text{Accuracy} =
+\frac{\text{Number of correct predictions}}{\text{Total number of examples}}\]</div>
+<p><strong>What’s a good accuracy?</strong></p>
+<ul class="simple">
+<li><p>Random guessing: <span class="math notranslate nohighlight">\(\qty{50}{\percent}\)</span> (for binary classification)</p></li>
+<li><p>Good model: <span class="math notranslate nohighlight">\(\qty{80}{\percent}+\)</span></p></li>
+<li><p>Excellent model: <span class="math notranslate nohighlight">\(\qty{90}{\percent}+\)</span></p></li>
+</ul>
+</section>
+<section id="error-rate">
+<h4>Error Rate<a class="headerlink" href="#error-rate" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-error-rate">
+<span class="eqno">(7.13)<a class="headerlink" href="#equation-eq-m3-team-2-error-rate" title="Link to this equation">#</a></span>\[\text{Error Rate} = 1 - \text{Accuracy}\]</div>
+</section>
+<section id="why-both-metrics">
+<h4>Why Both Metrics?<a class="headerlink" href="#why-both-metrics" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Accuracy tells us what we’re doing right</p></li>
+<li><p>Error rate tells us what we’re doing wrong</p></li>
+<li><p>Sometimes one is more intuitive than the other</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="task-instructions">
+<h2>Task Instructions<a class="headerlink" href="#task-instructions" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Deliverable Reminder</p>
+<p>Create a flowchart of your algorithm and save it as
+<span class="pasted-text">tp3_team_2_teamnumber.pdf</span>.
+Save your program as
+<span class="pasted-text">tp3_team_2_teamnumber.py</span>.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>For the functions described below, the order of arguments and outputs matter.</p>
+<p>This task has a lot of detailed instructions.  Read them carefully.</p>
+</div>
+<section id="step-1-sigmoid-function">
+<span id="tp-m3-team-task-2-step-1"></span><h3>Step 1: Sigmoid Function<a class="headerlink" href="#step-1-sigmoid-function" title="Link to this heading">#</a></h3>
+<p>Create a function named <code class="code highlight python docutils literal highlight-python"><span class="n">calculate_sigmoid</span></code>.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">z</span></code> (scalar or NumPy array of floats): Input value(s) to apply the
+sigmoid to.</p></li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">result</span></code> (float or NumPy array of floats): Probability value(s) in
+the range <span class="math notranslate nohighlight">\((0, 1)\)</span>, same shape as <code class="code highlight python docutils literal highlight-python"><span class="n">z</span></code>.</p></li>
+</ul>
+<p>The sigmoid function is defined as:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-sigmoid-function">
+<span class="eqno">(7.14)<a class="headerlink" href="#equation-eq-m3-team-2-sigmoid-function" title="Link to this equation">#</a></span>\[\sigma(z) = \frac{1}{1 + e^{-z}}\]</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>Use <code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">()</span></code> for <span class="math notranslate nohighlight">\(e^z\)</span>.</p></li>
+<li><p>Very large or very small <span class="math notranslate nohighlight">\(z\)</span> values can cause overflow.  Use
+<code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">()</span></code> to restrict <span class="math notranslate nohighlight">\(z\)</span> to the range <span class="math notranslate nohighlight">\([-10, 10]\)</span>.</p></li>
+</ul>
+</div>
+</section>
+<section id="step-2-predict-probabilities">
+<span id="tp-m3-team-task-2-step-2"></span><h3>Step 2: Predict Probabilities<a class="headerlink" href="#step-2-predict-probabilities" title="Link to this heading">#</a></h3>
+<p>Create a function named <code class="code highlight python docutils literal highlight-python"><span class="n">predict_proba</span></code>.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">X</span></code> (2D NumPy array of floats, shape <code class="docutils literal notranslate"><span class="pre">(m,</span> <span class="pre">n)</span></code>): Feature matrix, where
+<span class="math notranslate nohighlight">\(m\)</span> is the number of examples and <span class="math notranslate nohighlight">\(n\)</span> is the number of features.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">w</span></code> (1D NumPy array of floats, shape <code class="docutils literal notranslate"><span class="pre">(n,)</span></code>): Weight vector.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">b</span></code> (float): Bias.</p></li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">probabilities</span></code> (1D NumPy array of floats, shape <code class="docutils literal notranslate"><span class="pre">(m,)</span></code>): Predicted
+probability for each example.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Compute the <span class="math notranslate nohighlight">\(z\)</span> values using <a class="reference internal" href="#equation-eq-m3-team-2-forward-pass-all-examples">(7.7)</a>
+with matrix dot multiplication.</p></li>
+<li><p>Apply the sigmoid to each <span class="math notranslate nohighlight">\(z\)</span> value.</p></li>
+<li><p>Return the probabilities as a 1D NumPy array of shape <span class="math notranslate nohighlight">\((m,)\)</span>.</p></li>
+</ol>
+<p><strong>What is matrix dot multiplication?</strong></p>
+<p>Matrix dot multiplication lets us compute <span class="math notranslate nohighlight">\(z\)</span> for all examples simultaneously
+instead of looping.  Consider <span class="math notranslate nohighlight">\(X\)</span> of shape <span class="math notranslate nohighlight">\((5, 3)\)</span> (5 examples, 3 features)
+and <span class="math notranslate nohighlight">\(w\)</span> of shape <span class="math notranslate nohighlight">\((3,)\)</span>.  The product <span class="math notranslate nohighlight">\(X \cdot w\)</span> is a vector of shape
+<span class="math notranslate nohighlight">\((5,)\)</span> containing one score per example, before the sigmoid is applied.</p>
+<p>Let’s say we have:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-matrix-example">
+<span class="eqno">(7.15)<a class="headerlink" href="#equation-eq-m3-team-2-matrix-example" title="Link to this equation">#</a></span>\[\begin{split}X =
+\begin{bmatrix}
+  0.6 &amp;  8 &amp; 1 \\
+  0.2 &amp;  5 &amp; 0 \\
+  0.9 &amp; 10 &amp; 1 \\
+  0.1 &amp;  2 &amp; 0 \\
+  0.4 &amp;  7 &amp; 1
+\end{bmatrix} \quad \text{and} \quad
+w =
+\begin{bmatrix}
+  2.5 \\
+  0.8 \\
+  1.2
+\end{bmatrix} \quad \text{and} \quad
+b = 0.1\end{split}\]</div>
+<p>Then the combined score vector <span class="math notranslate nohighlight">\(z\)</span> would be calculated as:</p>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-matrix-multiply">
+<span class="eqno">(7.16)<a class="headerlink" href="#equation-eq-m3-team-2-matrix-multiply" title="Link to this equation">#</a></span>\[\begin{split}z =
+X \cdot w + b =
+\begin{bmatrix}
+  0.6 &amp;  8 &amp; 1 \\
+  0.2 &amp;  5 &amp; 0 \\
+  0.9 &amp; 10 &amp; 1 \\
+  0.1 &amp;  2 &amp; 0 \\
+  0.4 &amp;  7 &amp; 1
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+  2.5 \\
+  0.8 \\
+  1.2
+\end{bmatrix} + 0.1\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-matrix-expanded">
+<span class="eqno">(7.17)<a class="headerlink" href="#equation-eq-m3-team-2-matrix-expanded" title="Link to this equation">#</a></span>\[\begin{split}=
+\begin{bmatrix}
+  0.6 \times 2.5 +  8 \times 0.8 + 1 \times 1.2 \\
+  0.2 \times 2.5 +  5 \times 0.8 + 0 \times 1.2 \\
+  0.9 \times 2.5 + 10 \times 0.8 + 1 \times 1.2 \\
+  0.1 \times 2.5 +  2 \times 0.8 + 0 \times 1.2 \\
+  0.4 \times 2.5 +  7 \times 0.8 + 1 \times 1.2
+\end{bmatrix} + 0.1\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-eq-m3-team-2-z-result">
+<span class="eqno">(7.18)<a class="headerlink" href="#equation-eq-m3-team-2-z-result" title="Link to this equation">#</a></span>\[\begin{split}\therefore z =
+\begin{bmatrix}
+   9.1  \\
+   4.6  \\
+  11.55 \\
+   1.95 \\
+   7.9
+\end{bmatrix}\end{split}\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Hint</p>
+<ul class="simple">
+<li><p>Use <code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">()</span></code> or the <code class="code highlight python docutils literal highlight-python"><span class="o">@</span></code> operator for dot multiplication.</p></li>
+<li><p>Check dimensions: <span class="math notranslate nohighlight">\(X\)</span> is <span class="math notranslate nohighlight">\((m, n)\)</span>, <span class="math notranslate nohighlight">\(w\)</span> is <span class="math notranslate nohighlight">\((n,)\)</span>, result
+is <span class="math notranslate nohighlight">\((m,)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(b\)</span> is a scalar and will be broadcast automatically.</p></li>
+</ul>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>There is an important difference between a NumPy array of shape <span class="math notranslate nohighlight">\((m,)\)</span> and one of
+shape <span class="math notranslate nohighlight">\((m, 1)\)</span>.</p>
+<ul class="simple">
+<li><p>Shape <span class="math notranslate nohighlight">\((m,)\)</span> is a 1D array.  This is the expected output of
+<code class="code highlight python docutils literal highlight-python"><span class="n">predict_proba</span></code>.</p></li>
+<li><p>Shape <span class="math notranslate nohighlight">\((m, 1)\)</span> is a 2D column vector.  Returning this instead of a 1D array can
+cause shape-mismatch errors in downstream operations that rely on broadcasting.</p></li>
+</ul>
+</div>
+</section>
+<section id="step-3-predict-labels">
+<span id="tp-m3-team-task-2-step-3"></span><h3>Step 3: Predict Labels<a class="headerlink" href="#step-3-predict-labels" title="Link to this heading">#</a></h3>
+<p>Create a function named <code class="code highlight python docutils literal highlight-python"><span class="n">predict_labels</span></code>.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">X</span></code> (2D NumPy array of floats, shape <code class="docutils literal notranslate"><span class="pre">(m,</span> <span class="pre">n)</span></code>): Feature matrix.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">w</span></code> (1D NumPy array of floats, shape <code class="docutils literal notranslate"><span class="pre">(n,)</span></code>): Weight vector.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">b</span></code> (float): Bias.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">threshold</span></code> (float, default <span class="math notranslate nohighlight">\(0.5\)</span>): Decision threshold.</p></li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">predicted_labels</span></code> (1D NumPy array of ints, shape <code class="docutils literal notranslate"><span class="pre">(m,)</span></code>): Predicted
+class labels (<span class="math notranslate nohighlight">\(0\)</span> or <span class="math notranslate nohighlight">\(1\)</span>).</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Compute the probability array using <code class="code highlight python docutils literal highlight-python"><span class="n">predict_proba</span></code>.</p></li>
+<li><p>Compare each probability to <code class="code highlight python docutils literal highlight-python"><span class="n">threshold</span></code>.</p></li>
+<li><p>Assign <span class="math notranslate nohighlight">\(1\)</span> where probability <span class="math notranslate nohighlight">\(\geq\)</span> threshold, <span class="math notranslate nohighlight">\(0\)</span> otherwise.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Hint</p>
+<ul class="simple">
+<li><p>Use the <code class="code highlight python docutils literal highlight-python"><span class="o">&gt;=</span></code> operator to produce a boolean array.</p></li>
+<li><p>Convert to integers with <code class="code highlight python docutils literal highlight-python"><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span></code>.</p></li>
+<li><p>Adjusting <code class="code highlight python docutils literal highlight-python"><span class="n">threshold</span></code> shifts the decision boundary between classes.</p></li>
+</ul>
+</div>
+</section>
+<section id="step-4-compute-loss-and-gradients">
+<span id="tp-m3-team-task-2-step-4"></span><h3>Step 4: Compute Loss and Gradients<a class="headerlink" href="#step-4-compute-loss-and-gradients" title="Link to this heading">#</a></h3>
+<p>Create a function named <code class="code highlight python docutils literal highlight-python"><span class="n">compute_loss_and_grads</span></code>.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">X</span></code> (2D NumPy array of floats, shape <code class="docutils literal notranslate"><span class="pre">(m,</span> <span class="pre">n)</span></code>): Feature matrix.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">y</span></code> (1D NumPy array of ints, shape <code class="docutils literal notranslate"><span class="pre">(m,)</span></code>): True labels.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">w</span></code> (1D NumPy array of floats, shape <code class="docutils literal notranslate"><span class="pre">(n,)</span></code>): Current weight vector.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">b</span></code> (float): Current bias.</p></li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">loss</span></code> (float): Scalar training loss.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">dw</span></code> (1D NumPy array of floats, shape <code class="docutils literal notranslate"><span class="pre">(n,)</span></code>): Gradient with respect
+to <code class="code highlight python docutils literal highlight-python"><span class="n">w</span></code>.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">db</span></code> (float): Gradient with respect to <code class="code highlight python docutils literal highlight-python"><span class="n">b</span></code>.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Compute <span class="math notranslate nohighlight">\(\hat{y}\)</span> using <code class="code highlight python docutils literal highlight-python"><span class="n">predict_proba</span></code>.</p></li>
+<li><p>Compute the loss using <a class="reference internal" href="#equation-eq-m3-team-2-binary-cross-entropy-loss">(7.5)</a>.</p></li>
+<li><p>Compute the two gradients using <a class="reference internal" href="#equation-eq-m3-team-2-gradient-wrt-weights">(7.8)</a> and
+<a class="reference internal" href="#equation-eq-m3-team-2-gradient-wrt-bias">(7.9)</a>.</p></li>
+<li><p>Return all three values.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Hint</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\log(0)\)</span> is undefined.  Before taking the log, clip predictions to
+<span class="math notranslate nohighlight">\([\epsilon,\, 1 - \epsilon]\)</span> where <span class="math notranslate nohighlight">\(\epsilon = 10^{-15}\)</span> using
+<code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">()</span></code>.  This ensures <span class="math notranslate nohighlight">\(\log(\hat{y}^{(i)})\)</span> and
+<span class="math notranslate nohighlight">\(\log(1 - \hat{y}^{(i)})\)</span> are always finite.</p></li>
+<li><p>Use <code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span></code> to average the per-example losses
+(<a class="reference internal" href="#equation-eq-m3-team-2-binary-cross-entropy-loss">(7.5)</a>).</p></li>
+<li><p>Use <code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span></code> for the bias gradient
+(<a class="reference internal" href="#equation-eq-m3-team-2-gradient-wrt-bias">(7.9)</a>).</p></li>
+<li><p>Use <code class="code highlight python docutils literal highlight-python"><span class="n">X</span><span class="o">.</span><span class="n">T</span></code> and matrix dot multiplication for the weight gradient
+(<a class="reference internal" href="#equation-eq-m3-team-2-gradient-wrt-weights">(7.8)</a>).</p></li>
+</ul>
+</div>
+</section>
+<section id="step-5-train-logistic-regression">
+<span id="tp-m3-team-task-2-step-5"></span><h3>Step 5: Train Logistic Regression<a class="headerlink" href="#step-5-train-logistic-regression" title="Link to this heading">#</a></h3>
+<p>Create a function named <code class="code highlight python docutils literal highlight-python"><span class="n">train_logistic_regression</span></code>.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">X_train</span></code> (2D NumPy array of floats): Training feature matrix.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">y_train</span></code> (1D NumPy array of ints): Training labels.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">X_val</span></code> (2D NumPy array of floats): Validation feature matrix.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">y_val</span></code> (1D NumPy array of ints): Validation labels.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">learning_rate</span></code> (float): Step size for gradient descent.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">num_iterations</span></code> (int): Number of training iterations.</p></li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">w_best</span></code> (1D NumPy array of floats): Weight vector with lowest
+validation loss.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">b_best</span></code> (float): Bias with lowest validation loss.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">loss_history</span></code> (list of float): Training loss at each iteration.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">val_loss_history</span></code> (list of float): Validation loss at each iteration.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Initialize w and b (see <a class="reference internal" href="#tp-m3-team-task-2-init-params"><span class="std std-ref">Step 1: Initialize Parameters</span></a> for why and how)</p></li>
+<li><p>Initialize two empty lists to store training and validation loss history</p></li>
+<li><p>For each of <code class="code highlight python docutils literal highlight-python"><span class="n">num_iterations</span></code> iterations:</p>
+<ul class="simple">
+<li><p>Compute the training loss and gradients using <code class="code highlight python docutils literal highlight-python"><span class="n">compute_loss_and_grads</span></code>.</p></li>
+<li><p>Update <span class="math notranslate nohighlight">\(w\)</span> and <span class="math notranslate nohighlight">\(b\)</span> using the gradient descent equations
+(see <a class="reference internal" href="#tp-m3-team-task-2-update-params"><span class="std std-ref">Step 2: The Training Loop</span></a>).</p></li>
+<li><p>Append the training loss to <code class="code highlight python docutils literal highlight-python"><span class="n">loss_history</span></code>.</p></li>
+<li><p>Compute validation loss with
+<code class="code highlight python docutils literal highlight-python"><span class="n">compute_loss_and_grads</span><span class="p">(</span><span class="n">X_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span></code> (discard the gradients)
+and append to <code class="code highlight python docutils literal highlight-python"><span class="n">val_loss_history</span></code>.</p></li>
+<li><p>If this iteration’s validation loss is the lowest seen so far, save <span class="math notranslate nohighlight">\(w\)</span> and
+<span class="math notranslate nohighlight">\(b\)</span> as <span class="math notranslate nohighlight">\(w_{\text{best}}\)</span> and <span class="math notranslate nohighlight">\(b_{\text{best}}\)</span>.</p></li>
+</ul>
+</li>
+<li><p>Print the loss at the start and every <span class="math notranslate nohighlight">\(100\)</span> iterations to monitor progress.</p></li>
+<li><p>Return the best parameters and both loss history lists.</p></li>
+</ol>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>We choose the parameters that minimize validation loss to prevent overfitting to the
+training data.  That is, we want to find the parameters that not only perform well on
+the training data but also generalize well to unseen data (validation set).  By
+monitoring the validation loss, we can identify the point at which our model starts to
+overfit (when validation loss starts to increase) and select the parameters that
+correspond to the lowest validation loss as our final model parameters.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Hint</p>
+<ul class="simple">
+<li><p>Use <code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_features</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.01</span></code> to initialize weights with
+small random values.</p></li>
+<li><p>Store loss after each iteration to monitor progress.</p></li>
+<li><p>When updating the parameters, use the gradients calculated from the training
+data, not the validation data.</p></li>
+<li><p>Use the validation loss to determine the best parameters, not the training loss.</p></li>
+</ul>
+</div>
+</section>
+<section id="step-6-evaluate-logistic-regression">
+<span id="tp-m3-team-task-2-step-6"></span><h3>Step 6: Evaluate Logistic Regression<a class="headerlink" href="#step-6-evaluate-logistic-regression" title="Link to this heading">#</a></h3>
+<p>Create a function named <code class="code highlight python docutils literal highlight-python"><span class="n">evaluate_logistic_regression</span></code>.</p>
+<p>Arguments:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">X</span></code> (2D NumPy array of floats): Feature matrix.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">y</span></code> (1D NumPy array of ints): True labels.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">w</span></code> (1D NumPy array of floats): Trained weight vector.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">b</span></code> (float): Trained bias.</p></li>
+</ul>
+<p>Returns:</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">accuracy</span></code> (float): Proportion of correct predictions.</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">error_rate</span></code> (float): Proportion of incorrect predictions.</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Use <code class="code highlight python docutils literal highlight-python"><span class="n">predict_labels</span></code> to get predictions with a threshold of <span class="math notranslate nohighlight">\(0.5\)</span>.</p>
+<ul class="simple">
+<li><p>If you wish to use the default threshold of <span class="math notranslate nohighlight">\(0.5\)</span>, you can simply call
+<code class="code highlight python docutils literal highlight-python"><span class="n">predict_labels</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span></code> without passing the threshold argument,
+as it will default to <span class="math notranslate nohighlight">\(0.5\)</span>.</p></li>
+</ul>
+</li>
+<li><p>Calculate accuracy and error rate using <code class="code highlight python docutils literal highlight-python"><span class="n">calculate_metrics</span></code> (which you
+implemented in the previous task).</p></li>
+<li><p>Return the results.</p></li>
+</ol>
+</section>
+<section id="step-7-main-function">
+<span id="tp-m3-team-task-2-step-7"></span><h3>Step 7: Main Function<a class="headerlink" href="#step-7-main-function" title="Link to this heading">#</a></h3>
+<p>Create a <code class="code highlight python docutils literal highlight-python"><span class="n">main</span></code> function that runs the entire data loading, training,
+and evaluation process.</p>
+<ol class="arabic simple">
+<li><p>Ask the user to input the path to the feature dataset (e.g., <code class="docutils literal notranslate"><span class="pre">img_features.csv</span></code>), if
+they wish to shuffle the data, and the seed for the shuffle.</p>
+<ul class="simple">
+<li><p>Use <code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span></code> inside the main function to ensure
+reproducibility for the autograder.</p></li>
+</ul>
+</li>
+<li><p>Load the dataset using <code class="code highlight python docutils literal highlight-python"><span class="n">load_dataset</span></code> and display the shapes for features and
+labels.</p></li>
+<li><p>Split the dataset into training, validation, and test sets using
+<code class="code highlight python docutils literal highlight-python"><span class="n">train_val_test_split</span></code>.  Display the sizes of each set.</p></li>
+<li><p>Set the learning rate to <span class="math notranslate nohighlight">\(0.01\)</span> and the number of iterations to <span class="math notranslate nohighlight">\(5000\)</span>.</p></li>
+<li><p>Train the logistic regression model using <code class="code highlight python docutils literal highlight-python"><span class="n">train_logistic_regression</span></code></p></li>
+<li><p>Evaluate the trained model on the training, validation, and test sets using
+<code class="code highlight python docutils literal highlight-python"><span class="n">evaluate_logistic_regression</span></code> and report the accuracy and error rates (as
+percentages) for each set up to <span class="math notranslate nohighlight">\(2\)</span> decimal places.</p></li>
+<li><p>Report the final parameters (weights and bias) and training loss of the model.</p></li>
+<li><p>Display the feature importance by showing the absolute values of the weights for each
+feature.</p></li>
+</ol>
+<div class="note admonition">
+<p class="admonition-title">Note</p>
+<p>You will need the functions developed in <a class="reference internal" href="../../team_1/a/instructions.html#tp-m3-team-task-1"><span class="std std-numref">Section 7.1.1</span></a>.  Copy them into
+your program.</p>
+<ul class="simple">
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">load_dataset</span></code>: load the complete dataset</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">train_val_test_split</span></code>: split into train/val/test sets</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">scale_features</span></code>: standardize the features</p></li>
+<li><p><code class="code highlight python docutils literal highlight-python"><span class="n">calculate_metrics</span></code>: calculate accuracy and error rate</p></li>
+</ul>
+</div>
+</section>
+<section id="implementation-notes">
+<h3>Implementation Notes<a class="headerlink" href="#implementation-notes" title="Link to this heading">#</a></h3>
+<section id="hyperparameter-tuning">
+<h4>Hyperparameter Tuning<a class="headerlink" href="#hyperparameter-tuning" title="Link to this heading">#</a></h4>
+<p><strong>Number of iterations</strong>:</p>
+<ul class="simple">
+<li><p>Start with <span class="math notranslate nohighlight">\(500\)</span> to <span class="math notranslate nohighlight">\(1000\)</span> iterations and confirm the loss decreases
+before running a full <span class="math notranslate nohighlight">\(5000\)</span>-iteration training run.  This saves time during
+debugging.</p></li>
+<li><p>Remember to set the iteration count to <span class="math notranslate nohighlight">\(5000\)</span> for your final submission.</p></li>
+</ul>
+</section>
+<section id="monitoring-training-progress">
+<h4>Monitoring Training Progress<a class="headerlink" href="#monitoring-training-progress" title="Link to this heading">#</a></h4>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Observation</p></th>
+<th class="head"><p>Likely cause</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Loss decreases steadily</p></td>
+<td><p>Training is working correctly</p></td>
+</tr>
+<tr class="row-odd"><td><p>Loss increases</p></td>
+<td><p>Learning rate is too high</p></td>
+</tr>
+<tr class="row-even"><td><p>Loss plateaus early</p></td>
+<td><p>Learning rate is too low, or more iterations are needed</p></td>
+</tr>
+<tr class="row-odd"><td><p>Loss oscillates</p></td>
+<td><p>Learning rate is too high</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="common-pitfalls-and-solutions">
+<h4>Common Pitfalls and Solutions<a class="headerlink" href="#common-pitfalls-and-solutions" title="Link to this heading">#</a></h4>
+<p><strong>Problem</strong>: Loss becomes NaN.
+<strong>Solution</strong>: Check for <span class="math notranslate nohighlight">\(\log(0)\)</span> in the loss calculation and overflow in the
+sigmoid.  Make sure you are using <code class="code highlight python docutils literal highlight-python"><span class="n">np</span><span class="o">.</span><span class="n">clip</span><span class="p">()</span></code> in both places.</p>
+<p><strong>Problem</strong>: Training is very slow.
+<strong>Solution</strong>: Make sure you are using NumPy vectorized operations instead of Python
+loops, and that features are properly scaled before training.</p>
+<div class="warning admonition">
+<p class="admonition-title">Warning</p>
+<p>If your loss becomes NaN or infinity, immediately check your sigmoid function and
+gradient calculations.  This usually indicates a numerical overflow or division by zero.</p>
+</div>
+</section>
+</section>
+<section id="debugging-your-implementation">
+<h3>Debugging Your Implementation<a class="headerlink" href="#debugging-your-implementation" title="Link to this heading">#</a></h3>
+<section id="simple-test-cases">
+<h4>Simple Test Cases<a class="headerlink" href="#simple-test-cases" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><strong>Sigmoid function</strong>:</p>
+<ul class="simple">
+<li><p>sigmoid(<span class="math notranslate nohighlight">\(0\)</span>) should equal <span class="math notranslate nohighlight">\(0.5\)</span></p></li>
+<li><p>sigmoid(very large positive) should be close to <span class="math notranslate nohighlight">\(1\)</span></p></li>
+<li><p>sigmoid(very large negative) should be close to <span class="math notranslate nohighlight">\(0\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>Predictions</strong>:</p>
+<ul class="simple">
+<li><p>With all-zero weights and bias, all predictions should be <span class="math notranslate nohighlight">\(0.5\)</span></p></li>
+<li><p>With very large positive weights, predictions should be close to <span class="math notranslate nohighlight">\(1\)</span></p></li>
+</ul>
+</li>
+<li><p><strong>Loss calculation</strong>:</p>
+<ul class="simple">
+<li><p>Perfect predictions should give loss close to <span class="math notranslate nohighlight">\(0\)</span></p></li>
+<li><p>Random predictions should give loss around <span class="math notranslate nohighlight">\(0.69\)</span></p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="sanity-checks">
+<h4>Sanity Checks<a class="headerlink" href="#sanity-checks" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Loss should decrease during training</p></li>
+<li><p>Final accuracy should be better than random guessing (<span class="math notranslate nohighlight">\(\qty{50}{\percent}\)</span>)</p></li>
+<li><p>Weights should not be all zero after training</p></li>
+</ul>
+</section>
+</section>
+<section id="sample-output">
+<span id="mod-part-3-projects-gtsrb-m3-team-2-a-sample-output"></span><h3>Sample Output<a class="headerlink" href="#sample-output" title="Link to this heading">#</a></h3>
+<p>Use the values in
+<a class="reference internal" href="#tab-part-3-projects-gtsrb-m3-team-2-a-test-cases"><span class="std std-numref">Table 7.5</span></a> below to
+test your program.</p>
+<div class="pst-scrollable-table-container"><table class="test-case-table table" id="tab-part-3-projects-gtsrb-m3-team-2-a-test-cases">
+<caption><span class="caption-number">Table 7.5 </span><span class="caption-text">Test Cases</span><a class="headerlink" href="#tab-part-3-projects-gtsrb-m3-team-2-a-test-cases" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Case</p></th>
+<th class="head text-center"><p>dataset</p></th>
+<th class="head text-center"><p>shuffle</p></th>
+<th class="head text-center"><p>seed</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>1</p></td>
+<td class="text-center"><p>img_features.csv</p></td>
+<td class="text-center"><p>no</p></td>
+<td class="text-center"><p>42</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>2</p></td>
+<td class="text-center"><p>img_features.csv</p></td>
+<td class="text-center"><p>yes</p></td>
+<td class="text-center"><p>42</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Ensure your program’s output matches the provided samples exactly.
+This includes all characters, white space, and punctuation. In the
+samples, user input is <span class=user-input>highlighted like
+this</span> for clarity, but your program should not highlight user
+input in this way.</p>
+<div class="sample-output admonition">
+<p class="admonition-title">Case 1 Sample Output</p>
+<p><span class="raw-html">$ <span class='user-input'>python3 tp3_team_2_teamnumber.py</span></span>
+<span class="raw-html">Enter the path to the feature dataset: <span class='user-input'>img_features.csv</span></span>
+<span class="raw-html">Shuffle the dataset? (yes/no): <span class='user-input'>no</span></span>
+<span class="raw-html">Enter a seed for loading the dataset: <span class='user-input'>42</span></span></p>
+<p><span class="raw-html">Features shape: (1080, 9)</span>
+<span class="raw-html">Labels shape: (1080,)</span>
+<span class="raw-html">Data loaded and split into</span></p>
+<p><span class="raw-html">Training set:</span>
+<span class="raw-html">  size: 864</span>
+<span class="raw-html">Validation set:</span>
+<span class="raw-html">  size: 108</span>
+<span class="raw-html">Test set:</span>
+<span class="raw-html">  size: 108</span></p>
+<p><span class="raw-html">Training logistic regression model with learning rate = 0.01 and num_iterations = 5000...</span></p>
+<p><span class="raw-html">Iteration 0, Train Loss: 0.6802, Val Loss: 0.6716</span>
+<span class="raw-html">Iteration 100, Train Loss: 0.3697, Val Loss: 0.3483</span>
+<span class="raw-html">Iteration 200, Train Loss: 0.2919, Val Loss: 0.2791</span>
+<span class="raw-html">Iteration 300, Train Loss: 0.2581, Val Loss: 0.2572</span>
+<span class="raw-html">Iteration 400, Train Loss: 0.2388, Val Loss: 0.2511</span>
+<span class="raw-html">Iteration 500, Train Loss: 0.2260, Val Loss: 0.2518</span>
+<span class="raw-html">Iteration 600, Train Loss: 0.2168, Val Loss: 0.2559</span>
+<span class="raw-html">Iteration 700, Train Loss: 0.2097, Val Loss: 0.2617</span>
+<span class="raw-html">Iteration 800, Train Loss: 0.2042, Val Loss: 0.2683</span>
+<span class="raw-html">Iteration 900, Train Loss: 0.1997, Val Loss: 0.2753</span>
+<span class="raw-html">Iteration 1000, Train Loss: 0.1960, Val Loss: 0.2824</span>
+<span class="raw-html">Iteration 1100, Train Loss: 0.1928, Val Loss: 0.2893</span>
+<span class="raw-html">Iteration 1200, Train Loss: 0.1902, Val Loss: 0.2960</span>
+<span class="raw-html">Iteration 1300, Train Loss: 0.1880, Val Loss: 0.3024</span>
+<span class="raw-html">Iteration 1400, Train Loss: 0.1860, Val Loss: 0.3086</span>
+<span class="raw-html">Iteration 1500, Train Loss: 0.1843, Val Loss: 0.3144</span>
+<span class="raw-html">Iteration 1600, Train Loss: 0.1828, Val Loss: 0.3199</span>
+<span class="raw-html">Iteration 1700, Train Loss: 0.1815, Val Loss: 0.3252</span>
+<span class="raw-html">Iteration 1800, Train Loss: 0.1804, Val Loss: 0.3301</span>
+<span class="raw-html">Iteration 1900, Train Loss: 0.1793, Val Loss: 0.3348</span>
+<span class="raw-html">Iteration 2000, Train Loss: 0.1784, Val Loss: 0.3392</span>
+<span class="raw-html">Iteration 2100, Train Loss: 0.1776, Val Loss: 0.3434</span>
+<span class="raw-html">Iteration 2200, Train Loss: 0.1768, Val Loss: 0.3474</span>
+<span class="raw-html">Iteration 2300, Train Loss: 0.1761, Val Loss: 0.3511</span>
+<span class="raw-html">Iteration 2400, Train Loss: 0.1755, Val Loss: 0.3547</span>
+<span class="raw-html">Iteration 2500, Train Loss: 0.1749, Val Loss: 0.3581</span>
+<span class="raw-html">Iteration 2600, Train Loss: 0.1744, Val Loss: 0.3614</span>
+<span class="raw-html">Iteration 2700, Train Loss: 0.1739, Val Loss: 0.3644</span>
+<span class="raw-html">Iteration 2800, Train Loss: 0.1735, Val Loss: 0.3674</span>
+<span class="raw-html">Iteration 2900, Train Loss: 0.1731, Val Loss: 0.3702</span>
+<span class="raw-html">Iteration 3000, Train Loss: 0.1727, Val Loss: 0.3728</span>
+<span class="raw-html">Iteration 3100, Train Loss: 0.1724, Val Loss: 0.3754</span>
+<span class="raw-html">Iteration 3200, Train Loss: 0.1720, Val Loss: 0.3778</span>
+<span class="raw-html">Iteration 3300, Train Loss: 0.1717, Val Loss: 0.3801</span>
+<span class="raw-html">Iteration 3400, Train Loss: 0.1715, Val Loss: 0.3824</span>
+<span class="raw-html">Iteration 3500, Train Loss: 0.1712, Val Loss: 0.3845</span>
+<span class="raw-html">Iteration 3600, Train Loss: 0.1709, Val Loss: 0.3865</span>
+<span class="raw-html">Iteration 3700, Train Loss: 0.1707, Val Loss: 0.3885</span>
+<span class="raw-html">Iteration 3800, Train Loss: 0.1705, Val Loss: 0.3904</span>
+<span class="raw-html">Iteration 3900, Train Loss: 0.1703, Val Loss: 0.3922</span>
+<span class="raw-html">Iteration 4000, Train Loss: 0.1701, Val Loss: 0.3939</span>
+<span class="raw-html">Iteration 4100, Train Loss: 0.1699, Val Loss: 0.3956</span>
+<span class="raw-html">Iteration 4200, Train Loss: 0.1697, Val Loss: 0.3972</span>
+<span class="raw-html">Iteration 4300, Train Loss: 0.1696, Val Loss: 0.3987</span>
+<span class="raw-html">Iteration 4400, Train Loss: 0.1694, Val Loss: 0.4002</span>
+<span class="raw-html">Iteration 4500, Train Loss: 0.1693, Val Loss: 0.4016</span>
+<span class="raw-html">Iteration 4600, Train Loss: 0.1691, Val Loss: 0.4030</span>
+<span class="raw-html">Iteration 4700, Train Loss: 0.1690, Val Loss: 0.4043</span>
+<span class="raw-html">Iteration 4800, Train Loss: 0.1688, Val Loss: 0.4056</span>
+<span class="raw-html">Iteration 4900, Train Loss: 0.1687, Val Loss: 0.4068</span></p>
+<p><span class="raw-html">Final Model Evaluation with the best parameters:</span>
+<span class="raw-html">--------------------------------------------------</span>
+<span class="raw-html">Training Set - Accuracy: 91.78%, Error Rate: 8.22%</span>
+<span class="raw-html">Validation Set - Accuracy: 90.74%, Error Rate: 9.26%</span>
+<span class="raw-html">Test Set - Accuracy: 94.44%, Error Rate: 5.56%</span></p>
+<p><span class="raw-html">Final Parameters:</span>
+<span class="raw-html">Weights shape: (9,)</span>
+<span class="raw-html">Bias: 0.102294</span>
+<span class="raw-html">Final training loss: 0.168603</span></p>
+<p><span class="raw-html">Feature Importance (absolute weight values):</span>
+<span class="raw-html">Feature 0: 0.470950</span>
+<span class="raw-html">Feature 1: 0.005004</span>
+<span class="raw-html">Feature 2: 0.532263</span>
+<span class="raw-html">Feature 3: 0.345537</span>
+<span class="raw-html">Feature 4: 0.331293</span>
+<span class="raw-html">Feature 5: 0.421790</span>
+<span class="raw-html">Feature 6: 0.344842</span>
+<span class="raw-html">Feature 7: 0.437110</span>
+<span class="raw-html">Feature 8: 0.404324</span></p>
+</div>
+<div class="sample-output admonition">
+<p class="admonition-title">Case 2 Sample Output</p>
+<p><span class="raw-html">$ <span class='user-input'>python3 tp3_team_2_teamnumber.py</span></span>
+<span class="raw-html">Enter the path to the feature dataset: <span class='user-input'>img_features.csv</span></span>
+<span class="raw-html">Shuffle the dataset? (yes/no): <span class='user-input'>yes</span></span>
+<span class="raw-html">Enter a seed for loading the dataset: <span class='user-input'>42</span></span></p>
+<p><span class="raw-html">Features shape: (1080, 9)</span>
+<span class="raw-html">Labels shape: (1080,)</span>
+<span class="raw-html">Data loaded and split into</span></p>
+<p><span class="raw-html">Training set:</span>
+<span class="raw-html">  size: 864</span>
+<span class="raw-html">Validation set:</span>
+<span class="raw-html">  size: 108</span>
+<span class="raw-html">Test set:</span>
+<span class="raw-html">  size: 108</span></p>
+<p><span class="raw-html">Training logistic regression model with learning rate = 0.01 and num_iterations = 5000...</span></p>
+<p><span class="raw-html">Iteration 0, Train Loss: 0.6960, Val Loss: 0.6880</span>
+<span class="raw-html">Iteration 100, Train Loss: 0.3690, Val Loss: 0.3350</span>
+<span class="raw-html">Iteration 200, Train Loss: 0.2940, Val Loss: 0.2539</span>
+<span class="raw-html">Iteration 300, Train Loss: 0.2635, Val Loss: 0.2207</span>
+<span class="raw-html">Iteration 400, Train Loss: 0.2471, Val Loss: 0.2027</span>
+<span class="raw-html">Iteration 500, Train Loss: 0.2368, Val Loss: 0.1913</span>
+<span class="raw-html">Iteration 600, Train Loss: 0.2296, Val Loss: 0.1833</span>
+<span class="raw-html">Iteration 700, Train Loss: 0.2244, Val Loss: 0.1773</span>
+<span class="raw-html">Iteration 800, Train Loss: 0.2204, Val Loss: 0.1726</span>
+<span class="raw-html">Iteration 900, Train Loss: 0.2172, Val Loss: 0.1689</span>
+<span class="raw-html">Iteration 1000, Train Loss: 0.2146, Val Loss: 0.1658</span>
+<span class="raw-html">Iteration 1100, Train Loss: 0.2124, Val Loss: 0.1632</span>
+<span class="raw-html">Iteration 1200, Train Loss: 0.2106, Val Loss: 0.1610</span>
+<span class="raw-html">Iteration 1300, Train Loss: 0.2091, Val Loss: 0.1591</span>
+<span class="raw-html">Iteration 1400, Train Loss: 0.2077, Val Loss: 0.1574</span>
+<span class="raw-html">Iteration 1500, Train Loss: 0.2065, Val Loss: 0.1559</span>
+<span class="raw-html">Iteration 1600, Train Loss: 0.2055, Val Loss: 0.1546</span>
+<span class="raw-html">Iteration 1700, Train Loss: 0.2046, Val Loss: 0.1534</span>
+<span class="raw-html">Iteration 1800, Train Loss: 0.2038, Val Loss: 0.1524</span>
+<span class="raw-html">Iteration 1900, Train Loss: 0.2030, Val Loss: 0.1514</span>
+<span class="raw-html">Iteration 2000, Train Loss: 0.2023, Val Loss: 0.1506</span>
+<span class="raw-html">Iteration 2100, Train Loss: 0.2017, Val Loss: 0.1498</span>
+<span class="raw-html">Iteration 2200, Train Loss: 0.2012, Val Loss: 0.1491</span>
+<span class="raw-html">Iteration 2300, Train Loss: 0.2007, Val Loss: 0.1484</span>
+<span class="raw-html">Iteration 2400, Train Loss: 0.2002, Val Loss: 0.1478</span>
+<span class="raw-html">Iteration 2500, Train Loss: 0.1997, Val Loss: 0.1473</span>
+<span class="raw-html">Iteration 2600, Train Loss: 0.1993, Val Loss: 0.1467</span>
+<span class="raw-html">Iteration 2700, Train Loss: 0.1989, Val Loss: 0.1463</span>
+<span class="raw-html">Iteration 2800, Train Loss: 0.1986, Val Loss: 0.1458</span>
+<span class="raw-html">Iteration 2900, Train Loss: 0.1982, Val Loss: 0.1454</span>
+<span class="raw-html">Iteration 3000, Train Loss: 0.1979, Val Loss: 0.1450</span>
+<span class="raw-html">Iteration 3100, Train Loss: 0.1976, Val Loss: 0.1447</span>
+<span class="raw-html">Iteration 3200, Train Loss: 0.1973, Val Loss: 0.1443</span>
+<span class="raw-html">Iteration 3300, Train Loss: 0.1970, Val Loss: 0.1440</span>
+<span class="raw-html">Iteration 3400, Train Loss: 0.1968, Val Loss: 0.1437</span>
+<span class="raw-html">Iteration 3500, Train Loss: 0.1965, Val Loss: 0.1434</span>
+<span class="raw-html">Iteration 3600, Train Loss: 0.1963, Val Loss: 0.1431</span>
+<span class="raw-html">Iteration 3700, Train Loss: 0.1961, Val Loss: 0.1429</span>
+<span class="raw-html">Iteration 3800, Train Loss: 0.1959, Val Loss: 0.1426</span>
+<span class="raw-html">Iteration 3900, Train Loss: 0.1957, Val Loss: 0.1424</span>
+<span class="raw-html">Iteration 4000, Train Loss: 0.1955, Val Loss: 0.1422</span>
+<span class="raw-html">Iteration 4100, Train Loss: 0.1953, Val Loss: 0.1420</span>
+<span class="raw-html">Iteration 4200, Train Loss: 0.1951, Val Loss: 0.1418</span>
+<span class="raw-html">Iteration 4300, Train Loss: 0.1949, Val Loss: 0.1416</span>
+<span class="raw-html">Iteration 4400, Train Loss: 0.1948, Val Loss: 0.1414</span>
+<span class="raw-html">Iteration 4500, Train Loss: 0.1946, Val Loss: 0.1412</span>
+<span class="raw-html">Iteration 4600, Train Loss: 0.1945, Val Loss: 0.1411</span>
+<span class="raw-html">Iteration 4700, Train Loss: 0.1943, Val Loss: 0.1409</span>
+<span class="raw-html">Iteration 4800, Train Loss: 0.1942, Val Loss: 0.1408</span>
+<span class="raw-html">Iteration 4900, Train Loss: 0.1940, Val Loss: 0.1406</span></p>
+<p><span class="raw-html">Final Model Evaluation with the best parameters:</span>
+<span class="raw-html">--------------------------------------------------</span>
+<span class="raw-html">Training Set - Accuracy: 90.86%, Error Rate: 9.14%</span>
+<span class="raw-html">Validation Set - Accuracy: 94.44%, Error Rate: 5.56%</span>
+<span class="raw-html">Test Set - Accuracy: 90.74%, Error Rate: 9.26%</span></p>
+<p><span class="raw-html">Final Parameters:</span>
+<span class="raw-html">Weights shape: (9,)</span>
+<span class="raw-html">Bias: 0.556383</span>
+<span class="raw-html">Final training loss: 0.193887</span></p>
+<p><span class="raw-html">Feature Importance (absolute weight values):</span>
+<span class="raw-html">Feature 0: 0.787800</span>
+<span class="raw-html">Feature 1: 0.246556</span>
+<span class="raw-html">Feature 2: 0.625844</span>
+<span class="raw-html">Feature 3: 0.596205</span>
+<span class="raw-html">Feature 4: 0.729823</span>
+<span class="raw-html">Feature 5: 0.699014</span>
+<span class="raw-html">Feature 6: 0.621271</span>
+<span class="raw-html">Feature 7: 0.964680</span>
+<span class="raw-html">Feature 8: 0.936781</span></p>
+</div>
+<div class="pst-scrollable-table-container"><table class="deliverables table" id="tab-tp-m3-team-2-deliverables">
+<caption><span class="caption-number">Table 7.6 </span><span class="caption-text">Deliverables</span><a class="headerlink" href="#tab-tp-m3-team-2-deliverables" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Deliverables</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="pasted-text">tp3_team_2_teamnumber.pdf</span></p></td>
+<td><p>Flowchart(s) for this task.</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="pasted-text">tp3_team_2_teamnumber.py</span></p></td>
+<td><p>Your completed <strong class="program">Python</strong> code.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Part_3_Projects/GTSRB/M3/tasks/team_2/a"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../../team_1/a/instructions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">7.1.1. </span>Task 1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../team_3/a/instructions.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">7.1.3. </span>Task 3</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-concept-what-is-logistic-regression">The concept - What is Logistic Regression?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-it-works-step-by-step">How It Works Step-by-Step</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-combine-all-features-the-linear-part">Step 1: Combine All Features (The Linear Part)</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-convert-to-probability-the-sigmoid-function">Step 2: Convert to Probability (The Sigmoid Function)</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-make-the-final-decision">Step 3: Make the Final Decision</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-loss-function">Understanding the Loss Function</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-need-a-loss-function">Why Do We Need a Loss Function?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#binary-cross-entropy-loss-explained">Binary Cross-Entropy Loss Explained</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#for-a-single-example">For a Single Example</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#average-loss-for-all-examples">Average Loss for All Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#training-with-gradient-descent-step-by-step">Training with Gradient Descent - Step by Step</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-gradient-descent">What is Gradient Descent?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-training-process">The Training Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-initialize-parameters">Step 1: Initialize Parameters</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-the-training-loop">Step 2: The Training Loop</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-when-to-stop-training">Step 3: When to Stop Training</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-metrics-how-good-is-our-model">Evaluation Metrics - How Good is Our Model?</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy">Accuracy</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#error-rate">Error Rate</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#why-both-metrics">Why Both Metrics?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-instructions">Task Instructions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-sigmoid-function">Step 1: Sigmoid Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-predict-probabilities">Step 2: Predict Probabilities</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-predict-labels">Step 3: Predict Labels</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-compute-loss-and-gradients">Step 4: Compute Loss and Gradients</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-train-logistic-regression">Step 5: Train Logistic Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-6-evaluate-logistic-regression">Step 6: Evaluate Logistic Regression</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-7-main-function">Step 7: Main Function</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-notes">Implementation Notes</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hyperparameter-tuning">Hyperparameter Tuning</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#monitoring-training-progress">Monitoring Training Progress</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#common-pitfalls-and-solutions">Common Pitfalls and Solutions</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging-your-implementation">Debugging Your Implementation</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-test-cases">Simple Test Cases</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sanity-checks">Sanity Checks</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-output">Sample Output</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="/2026-spring/Appendices/contributors.html">Contributors</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025 All rights reserved..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

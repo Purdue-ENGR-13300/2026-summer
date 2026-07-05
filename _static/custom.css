@@ -1,0 +1,292 @@
+:root {
+  --custom-color: #cbb992;
+
+  /* Primary Colors */
+  --purdue-boilermaker-gold: #cfb991;
+  --purdue-black: #000000;
+
+  /* Supporting Colors */
+  --purdue-aged: #8e6f3e;
+  --purdue-rush: #daaa00;
+  --purdue-field: #ddb945;
+  --purdue-dust: #ebd99f;
+
+  --purdue-steel: #555960;
+  --purdue-cool-gray: #6f727b;
+  --purdue-railway-gray: #9d9795;
+  --purdue-steam: #c4bfc0;
+}
+
+.logo-subtitle {
+  font-weight: 700;
+  color: var(--pst-color-muted);
+}
+
+.text-left{
+  text-align: left !important;
+}
+.text-right{
+  text-align: right !important;
+}
+
+/* Example custom colors for light and dark theme */
+html[data-theme="dark"] {
+  --pst-color-primary: var(--purdue-steam);
+  --sample-output-bg-color: var(--lt-color-gray-700);
+  --table-bg-color: var(--purdue-steel);
+  --test-case-table-rule-color: var(--lt-color-gray-700);
+  --deliverables-table-bg-color: var(--purdue-steel);
+}
+
+html[data-theme="light"] {
+  --pst-color-primary: var(--purdue-black);
+  --sample-output-bg-color: var(--lt-color-gray-200);
+  --table-bg-color: var(--purdue-dust);
+  --test-case-table-rule-color: var(--lt-color-gray-900);
+  --deliverables-table-bg-color: var(--purdue-dust);
+}
+
+.admonition.sample-output, div.admonition.sample-output {
+  font-family: monospace;
+	border-color: var(--pst-color-attention);
+  background-color: var(--sample-output-bg-color);
+  overflow-x: auto;  /* Add horizontal scroll bar to wide output. */
+  overflow-y: auto;  /* Add vertical scroll bar to long output. */
+  max-height: 30rem; /* Limit height of output. */
+  display: grid;   /* Allow header to stretch horizontally. */
+  white-space: pre;
+}
+
+.admonition.sample-output > .admonition-title::before, div.admonition.sample-output > .admonition-title::before {
+	background-color: var(--pst-color-attention-bg);
+}
+
+.admonition.sample-output > .admonition-title::after, div.admonition.sample-output > .admonition-title::after {
+	color: var(--pst-color-attention);
+  content: ""; /* Font Awesome icon for "code-compare" */
+}
+
+div.output-file {
+  overflow-x: auto;  /* Add horizontal scroll bar to wide output. */
+  overflow-y: auto;  /* Add vertical scroll bar to long output. */
+  max-height: 30rem; /* Limit height of output. */
+  display: grid;   /* Allow header to stretch horizontally. */
+}
+
+img.sample-output {
+  border-radius: .25rem;
+  box-shadow: 0 .2rem .5rem var(--pst-color-shadow),0 0 .0625rem var(--pst-color-shadow) !important;
+}
+
+table.table > thead > tr {
+	background-color: var(--table-bg-color);
+  border-bottom: 1px solid var(--table-bg-color);
+}
+
+table.table.test-case-table {
+  border-block: 2px solid var(--test-case-table-rule-color);
+}
+
+table.table.test-case-table thead tr {
+	background-color: var(--pst-color-attention-bg);
+  border-bottom: 1px solid var(--test-case-table-rule-color);
+}
+
+.table thead tr, table thead tr {
+  border-bottom: 1px solid var(--test-case-table-rule-color);
+}
+
+table td {
+  border-bottom: none;
+}
+
+table.table.deliverables > thead > tr{
+  background-color: var(--deliverables-table-bg-color);
+}
+
+.user-input {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Use lower case letters for second level ordered list */
+ol.arabic ol.arabic {
+	list-style: lower-alpha;
+}
+
+/* Use roman numerals for third level ordered list */
+ol.arabic ol ol.arabic {
+	list-style: lower-roman;
+}
+
+.no-smoothing {
+  image-rendering: pixelated; /* Standard */
+}
+
+/* Center specified columns in tables. */
+.col-1-center td:nth-child(1),
+.col-1-center th:nth-child(1) {
+    text-align: center;
+}
+
+.col-2-center td:nth-child(2),
+.col-2-center th:nth-child(2) {
+    text-align: center;
+}
+
+.col-3-center td:nth-child(3),
+.col-3-center th:nth-child(3) {
+    text-align: center;
+}
+
+.col-center td,
+.col-center th {
+    text-align: center;
+}
+
+/* === Course Schedule color coding === */
+.sch-table,
+.sch-legend {
+  font-size: 0.8rem;
+  border-collapse: collapse;
+}
+
+.sch-table th,
+.sch-table td,
+.sch-legend th,
+.sch-legend td {
+  border: 1px solid #dee2e6;
+  padding: 0.35rem 0.5rem;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Sticky column header — offset below navbar + article-items bar (set by custom.js) */
+.sch-table thead th,
+.sch-legend thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+.sch-table thead th {
+    position: sticky;
+    top: var(--sch-sticky-top, var(--pst-header-height, 0));
+    z-index: 2;
+    white-space: nowrap;
+}
+html[data-theme="dark"] .sch-table thead th,
+html[data-theme="dark"] .sch-legend thead th { background-color: #343a40; color: #eee; }
+
+/* Row-level backgrounds — all cells get an explicit base so JB's hover rule has nothing to fall back on;
+   columns 5+ get the module color on top */
+.sch-table td { background-color: var(--pst-color-surface, #fff); }
+html[data-theme="dark"] .sch-table td { background-color: var(--pst-color-surface, #212529); }
+.sch-table tr.sch-xl  td:nth-child(n+5) { background-color: #FFE699; }
+.sch-table tr.sch-py  td:nth-child(n+5) { background-color: #BDD7EE; }
+.sch-table tr.sch-ma  td:nth-child(n+5) { background-color: #C6E0B4; }
+.sch-table tr.sch-prj td:nth-child(n+5) { background-color: #FFCCFF; }
+.sch-table tr.sch-hol td:nth-child(n+5) { background-color: #F8CBAD; font-style: italic; }
+
+/* Row hover — our explicit backgrounds above beat JB's hover rule by specificity;
+   add a subtle inset shadow tint across all columns */
+.sch-table tbody tr:hover td { box-shadow: inset 0 0 0 9999px rgba(0, 0, 0, 0.07); }
+html[data-theme="dark"] .sch-table tbody tr:hover td { box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 0.1); }
+
+/* Week separator rows */
+.sch-table tr.sch-week td { background-color: #495057; color: #fff; font-weight: 600; border-color: #495057; border-bottom-color: #dee2e6; }
+
+/* Today's row */
+.sch-table tr.sch-today td { font-weight: 700; border-top: 2px solid #495057 !important; border-bottom: 2px solid #495057 !important; }
+.sch-table tr.sch-today td:first-child { border-left: 2px solid #495057 !important; }
+.sch-table tr.sch-today td:last-child  { border-right: 2px solid #495057 !important; }
+
+/* Cell-level overrides — specificity (0,3,2) beats row rules above */
+.sch-table tr td.sch-xl:nth-child(n+1)  { background-color: #FFE699; font-style: normal; }
+.sch-table tr td.sch-py:nth-child(n+1)  { background-color: #BDD7EE; font-style: normal; }
+.sch-table tr td.sch-ma:nth-child(n+1)  { background-color: #C6E0B4; font-style: normal; }
+.sch-table tr td.sch-prj:nth-child(n+1) { background-color: #FFCCFF; font-style: normal; }
+.sch-table tr td.sch-hol:nth-child(n+1) { background-color: #F8CBAD; font-style: italic; }
+.sch-table tr td.sch-cat:nth-child(n+1) { background-color: #99FFF6; font-style: normal; }
+.sch-table tr td.sch-pp:nth-child(n+1)  { background-color: #ffff00; font-style: normal; }
+
+/* Dark-mode overrides */
+html[data-theme="dark"] .sch-table tr.sch-xl  td:nth-child(n+5) { background-color: #4a3c00; color: #eee; }
+html[data-theme="dark"] .sch-table tr.sch-py  td:nth-child(n+5) { background-color: #1a3050; color: #eee; }
+html[data-theme="dark"] .sch-table tr.sch-ma  td:nth-child(n+5) { background-color: #1a3d26; color: #eee; }
+html[data-theme="dark"] .sch-table tr.sch-prj td:nth-child(n+5) { background-color: #3d1a3d; color: #eee; }
+html[data-theme="dark"] .sch-table tr.sch-hol td:nth-child(n+5) { background-color: #6b3828; color: #eee; }
+html[data-theme="dark"] .sch-table tr.sch-week td               { background-color: #2a2f33; color: #ccc; }
+html[data-theme="dark"] .sch-table tr td.sch-xl:nth-child(n+1)  { background-color: #4a3c00; color: #eee; }
+html[data-theme="dark"] .sch-table tr td.sch-py:nth-child(n+1)  { background-color: #1a3050; color: #eee; }
+html[data-theme="dark"] .sch-table tr td.sch-ma:nth-child(n+1)  { background-color: #1a3d26; color: #eee; }
+html[data-theme="dark"] .sch-table tr td.sch-prj:nth-child(n+1) { background-color: #3d1a3d; color: #eee; }
+html[data-theme="dark"] .sch-table tr td.sch-hol:nth-child(n+1) { background-color: #6b3828; color: #eee; }
+html[data-theme="dark"] .sch-table tr td.sch-cat:nth-child(n+1) { background-color: #0a4a46; color: #eee; }
+html[data-theme="dark"] .sch-table tr td.sch-pp:nth-child(n+1)  { background-color: #4a4a00; color: #eee; }
+
+/* Legend table */
+table.sch-legend { width: auto; margin-bottom: 1rem; border-collapse: collapse; }
+
+table.sch-legend td { border: 1px solid #dee2e6; padding: 0.25rem 1rem; }
+table.sch-legend tr.sch-xl   td { background-color: #FFE699; }
+table.sch-legend tr.sch-py   td { background-color: #BDD7EE; }
+table.sch-legend tr.sch-ma   td { background-color: #C6E0B4; }
+table.sch-legend tr.sch-prj  td { background-color: #FFCCFF; }
+table.sch-legend tr.sch-hol  td { background-color: #F8CBAD; font-style: italic; }
+table.sch-legend tr.sch-cat  td { background-color: #99FFF6; }
+table.sch-legend tr.sch-pp   td { background-color: #ffff00; }
+
+/* Legend — dark mode */
+
+html[data-theme="dark"] table.sch-legend td { border-color: #495057; }
+html[data-theme="dark"] table.sch-legend tr.sch-xl   td { background-color: #4a3c00; color: #eee; }
+html[data-theme="dark"] table.sch-legend tr.sch-py   td { background-color: #1a3050; color: #eee; }
+html[data-theme="dark"] table.sch-legend tr.sch-ma   td { background-color: #1a3d26; color: #eee; }
+html[data-theme="dark"] table.sch-legend tr.sch-prj  td { background-color: #3d1a3d; color: #eee; }
+html[data-theme="dark"] table.sch-legend tr.sch-hol  td { background-color: #6b3828; color: #eee; }
+html[data-theme="dark"] table.sch-legend tr.sch-cat  td { background-color: #0a4a46; color: #eee; }
+html[data-theme="dark"] table.sch-legend tr.sch-pp   td { background-color: #4a4a00; color: #eee; }
+
+/* Prevent the navbar logo title from wrapping at narrow widths; shrink instead.
+   Use a container query so the font scales with the logo image — both are
+   constrained by .navbar-brand width, so cqw keeps them proportional. */
+.navbar-brand {
+  container-type: inline-size;
+}
+.navbar-brand .logo__title {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: clamp(0.4rem, 6.5cqw, 1.5rem);
+}
+
+/* ADA fix: the pydata-sphinx-theme applies text-decoration:underline to
+   <p class="prev-next-title"> rather than to the wrapping <a>, which causes
+   WAVE to flag it as "underlined non-link text".  The prev/next widget is a
+   self-contained nav element (not body text), so removing the underline
+   entirely is WCAG-compliant and eliminates the false-positive alert. */
+.prev-next-area a p.prev-next-title {
+  text-decoration: none;
+}
+
+/* ADA fix: sphinx-design tab-sets use <input type="radio"> elements with a
+   shared name, which WAVE flags as "Missing fieldset". custom.js wraps each
+   .sd-tab-set in a <fieldset class="sd-tab-fieldset"> with a hidden <legend>.
+   Reset fieldset's default browser styling so the tab-set layout is unchanged. */
+fieldset.sd-tab-fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/* Visually hide an element while keeping it accessible to screen readers. */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

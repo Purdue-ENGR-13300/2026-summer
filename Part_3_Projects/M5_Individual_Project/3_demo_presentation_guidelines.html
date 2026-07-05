@@ -1,0 +1,1281 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>8.3. Demo Presentation - 25 points &#8212; Purdue University ENGR 13300</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css?v=8cd3d715" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=c6bace48" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=a8e58a58"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=b8b12719"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Part_3_Projects/M5_Individual_Project/3_demo_presentation_guidelines';</script>
+    <script src="../../_static/custom.js?v=69db6cbe"></script>
+    <link rel="icon" href="../../_static/avatar.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.4. Report - 25 points" href="4_report_guidelines.html" />
+    <link rel="prev" title="8.2. Code - 55 points" href="2_code_guidelines.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt=""/>
+    <img src="../../_static/logo.png" class="logo__image only-dark pst-js-only" alt=""/>
+  
+  
+    <p class="title logo__title">Transforming Ideas to Innovation<br>
+<span class='logo-subtitle'>Autumn 2026</span>
+</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Start Here</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Part_1_Start_Here/syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part_1_Start_Here/meet_the_team.html">Meet Your Instructional Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part_1_Start_Here/help_sessions.html">Help Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part_1_Start_Here/course_schedule.html">Course Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part_1_Start_Here/course_software/course_software.html">Course Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Part_1_Start_Here/computer_basics/computer_basics.html">Computer Basics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Professional Development</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/0_overview.html">1. Professional Preparation</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/pwl_assignments.html">1.1. West Lafayette</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_1/career_exploration_1.html">1.1.1. Career Exploration 1 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_2/career_exploration_2.html">1.1.2. Career Exploration 2 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_3/career_exploration_3.html">1.1.3. Career Exploration 3 (EYM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_4/personal_activity.html">1.1.4. Personal Activity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pwl_5/cultural_experience.html">1.1.5. Cultural Experience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/pin_assignments.html">1.2. Indianapolis</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_1/major_exploration_1.html">1.2.1. Major Exploration 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_2/major_exploration_2.html">1.2.2. Major Exploration 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_3/personal_activity_1.html">1.2.3. Personal Activity 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_4/personal_activity_2.html">1.2.4. Personal Activity 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/pin_5/cultural_experience.html">1.2.5. Cultural Experience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/common_assignments.html">1.3. Common</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M1_Professional_Preparation/activities/common_1/resume.html">1.3.1. Resume Preparation</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M2_Information_Literacy/0_overview.html">2. Information Literacy</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M2_Information_Literacy/1_pre-class_material.html">2.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M2_Information_Literacy/1.1_materials.html">2.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M2_Information_Literacy/tasks/pre_0/instructions.html">2.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M2_Information_Literacy/2_team_assignments.html">2.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M2_Information_Literacy/tasks/team_1/instructions.html">2.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M3_Teaming/0_overview.html">3. Teaming</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M3_Teaming/2_team_assignments.html">3.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M3_Teaming/tasks/team_1/instructions.html">3.1.1. Task 1</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_2_Professional_Development/M3_Teaming/3_ind_assignments.html">3.2. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_2_Professional_Development/M3_Teaming/tasks/ind_1/instructions.html">3.2.1. Task 1</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Projects</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../M1_Dream_Project/0_overview.html">4. Dream Project</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GTSRB/M1/0_overview.html">5. Team Project Checkpoint 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../GTSRB/M1/1_pre-class_material.html">5.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M1/1.1_materials.html">5.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M1/tasks/pre_0/a/instructions.html">5.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../GTSRB/M1/2_team_assignments.html">5.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M1/tasks/team_1/a/instructions.html">5.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M1/tasks/team_2/a/instructions.html">5.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M1/tasks/team_3/a/instructions.html">5.2.3. Task 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M1/tasks/team_4/a/instructions.html">5.2.4. Task 4</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GTSRB/M2/0_overview.html">6. Team Project Checkpoint 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../GTSRB/M2/1_pre-class_material.html">6.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M2/1.1_materials.html">6.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M2/tasks/pre_0/a/instructions.html">6.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../GTSRB/M2/2_team_assignments.html">6.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M2/tasks/team_1/a/instructions.html">6.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M2/tasks/team_2/a/instructions.html">6.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M2/tasks/team_3/a/instructions.html">6.2.3. Task 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M2/tasks/team_4/a/instructions.html">6.2.4. Task 4</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../GTSRB/M3/0_overview.html">7. Team Project Checkpoint 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../GTSRB/M3/1_team_assignments.html">7.1. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M3/tasks/team_1/a/instructions.html">7.1.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M3/tasks/team_2/a/instructions.html">7.1.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M3/tasks/team_3/a/instructions.html">7.1.3. Task 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../GTSRB/M3/tasks/team_4/a/instructions.html">7.1.4. Task 4</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="0_overview.html">8. Individual Project</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_proposal_guidelines.html">8.1. Proposal - 5 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2_code_guidelines.html">8.2. Code - 55 points</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">8.3. Demo Presentation - 25 points</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4_report_guidelines.html">8.4. Report - 25 points</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MS Excel</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_4_Excel/M1/0_overview.html">9. <strong class="program">MS Excel</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Excel/M1/1_pre-class_material.html">9.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M1/1.1_materials.html">9.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M1/tasks/pre_0/a/instructions.html">9.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Excel/M1/2_team_assignments.html">9.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M1/tasks/team_1/a/instructions.html">9.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M1/tasks/team_2/a/instructions.html">9.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M1/tasks/team_3/a/instructions.html">9.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Excel/M1/3_ind_assignments.html">9.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M1/tasks/ind_1/a/instructions.html">9.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M1/tasks/ind_2/a/instructions.html">9.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_4_Excel/M2/0_overview.html">10. <strong class="program">MS Excel</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Excel/M2/1_pre-class_material.html">10.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M2/1.1_materials.html">10.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M2/tasks/pre_0/a/instructions.html">10.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Excel/M2/2_team_assignments.html">10.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M2/tasks/team_1/a/instructions.html">10.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M2/tasks/team_2/a/instructions.html">10.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M2/tasks/team_3/a/instructions.html">10.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_4_Excel/M2/3_ind_assignments.html">10.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M2/tasks/ind_1/a/instructions.html">10.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_4_Excel/M2/tasks/ind_2/a/instructions.html">10.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Python</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_Python/M1/0_overview.html">11. <strong class="program">Python</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M1/1_pre-class_material.html">11.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M1/1.1_materials.html">11.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M1/tasks/pre_0/a/instructions.html">11.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M1/2_team_assignments.html">11.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M1/tasks/team_1/b/instructions.html">11.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M1/tasks/team_2/a/instructions.html">11.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M1/tasks/team_3/string_comparisons/instructions.html">11.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M1/3_ind_assignments.html">11.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M1/tasks/ind_1/a/instructions.html">11.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M1/tasks/ind_2/series_and_parallel_circuits/instructions.html">11.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_Python/M2/0_overview.html">12. <strong class="program">Python</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M2/1_pre-class_material.html">12.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M2/1.1_materials.html">12.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M2/tasks/pre_0/a/instructions.html">12.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M2/2_team_assignments.html">12.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M2/tasks/team_1/a/instructions.html">12.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M2/tasks/team_2/a/instructions.html">12.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M2/tasks/team_3/escape_velocity/instructions.html">12.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M2/3_ind_assignments.html">12.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M2/tasks/ind_1/a/instructions.html">12.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M2/tasks/ind_2/a/instructions.html">12.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_Python/M3/0_overview.html">13. <strong class="program">Python</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M3/1_pre-class_material.html">13.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M3/1.1_materials.html">13.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M3/tasks/pre_0/a/instructions.html">13.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M3/2_team_assignments.html">13.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M3/tasks/team_1/a/instructions.html">13.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M3/tasks/team_2/a/instructions.html">13.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M3/tasks/team_3/a/instructions.html">13.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M3/3_ind_assignments.html">13.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M3/tasks/ind_1/llms/instructions.html">13.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M3/tasks/ind_2/a/instructions.html">13.3.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M3/tasks/ind_1/genotype/instructions.html">13.3.3. Task 3 (Bonus)</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_Python/M4/0_overview.html">14. <strong class="program">Python</strong> 4</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M4/1_pre-class_material.html">14.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M4/1.1_materials.html">14.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M4/tasks/pre_0/a/instructions.html">14.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M4/2_team_assignments.html">14.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M4/tasks/team_1/a/instructions.html">14.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M4/tasks/team_2/a/instructions.html">14.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M4/tasks/team_3/a/instructions.html">14.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M4/3_ind_assignments.html">14.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M4/tasks/ind_1/ngram_generation/instructions.html">14.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M4/tasks/ind_2/ngram_analysis/instructions.html">14.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_5_Python/M5/0_overview.html">15. <strong class="program">Python</strong> 5</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M5/1_pre-class_material.html">15.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M5/1.1_materials.html">15.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M5/tasks/pre_0/linearized_rgb_intensity/instructions.html">15.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M5/2_team_assignments.html">15.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M5/tasks/team_1/linearized_rgb_intensity_reflection/instructions.html">15.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M5/tasks/team_2/a/instructions.html">15.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M5/tasks/team_3/a/instructions.html">15.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_5_Python/M5/3_ind_assignments.html">15.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M5/tasks/ind_1/rgb_to_luminance/instructions.html">15.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_5_Python/M5/tasks/ind_2/a/instructions.html">15.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">MATLAB</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M1/0_overview.html">16. <strong class="program">MATLAB</strong> 1</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M1/1_pre-class_material.html">16.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M1/1.1_materials.html">16.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M1/tasks/pre_0/a/instructions.html">16.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M1/2_team_assignments.html">16.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M1/tasks/team_1/a/instructions.html">16.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M1/tasks/team_2/a/instructions.html">16.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M1/tasks/team_3/a/instructions.html">16.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M1/3_ind_assignments.html">16.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M1/tasks/ind_1/a/instructions.html">16.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M1/tasks/ind_2/a/instructions.html">16.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M2/0_overview.html">17. <strong class="program">MATLAB</strong> 2</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M2/1_pre-class_material.html">17.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M2/1.1_materials.html">17.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M2/tasks/pre_0/a/instructions.html">17.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M2/2_team_assignments.html">17.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M2/tasks/team_1/a/instructions.html">17.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M2/tasks/team_2/a/instructions.html">17.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M2/tasks/team_3/a/instructions.html">17.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M2/3_ind_assignments.html">17.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M2/tasks/ind_1/a/instructions.html">17.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M2/tasks/ind_2/a/instructions.html">17.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M3/0_overview.html">18. <strong class="program">MATLAB</strong> 3</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M3/1_pre-class_material.html">18.1. Pre-Class Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M3/1.1_materials.html">18.1.1. Materials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M3/tasks/pre_0/a/instructions.html">18.1.2. Task 0</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M3/2_team_assignments.html">18.2. Team Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M3/tasks/team_1/a/instructions.html">18.2.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M3/tasks/team_2/a/instructions.html">18.2.2. Task 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M3/tasks/team_3/a/instructions.html">18.2.3. Task 3</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../Part_6_MATLAB/M3/3_ind_assignments.html">18.3. Individual Assignments</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M3/tasks/ind_1/a/instructions.html">18.3.1. Task 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../Part_6_MATLAB/M3/tasks/ind_2/a/instructions.html">18.3.2. Task 2</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/issues.html">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/employment.html">Student Employment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Appendices/contributors.html">Contributors</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/Purdue-ENGR-13300/2026-spring/issues/new?title=Issue%20on%20page%20%2FPart_3_Projects/M5_Individual_Project/3_demo_presentation_guidelines.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button"
+   title="Open an issue"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+
+</a>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Demo Presentation - 25 points</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-instructions">8.3.1. Task Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-requirements">8.3.2. Presentation Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-project-motivation-3-pts">1. Background and Project Motivation (3 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-concept-3-pts">2. New Concept (3 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-demonstration-12-pts">3. Code Demonstration (12 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-2-pts">4. Conclusion (2 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-rubric">8.3.3. Presentation Rubric</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-survey-link">Peer Review Survey Link</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-group-zoom-links">8.3.4. Presentation Group Zoom Links</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-log-in-to-zoom-using-your-purdue-zoom-account">How to log in to Zoom using your Purdue Zoom account</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">8.3.5. Deliverables</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <p><span class="raw-html"><div class="d-none"></span></p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\newcommand\blank{~\underline{\hspace{1.2cm}}~}\\% Bold symbols (vectors)
+\newcommand\bs[1]{\mathbf{#1}}\\% Differential
+\newcommand\dd[2][]{\mathrm{d}^{#1}{#2}}  % use as \dd, \dd{x}, or \dd[2]{x}\\% Poor man's siunitx
+\newcommand\unit[1]{\mathrm{#1}}
+\newcommand\num[1]{#1}
+\newcommand\qty[2]{#1~\unit{#2}}\\\newcommand\per{/}
+\newcommand\squared{{}^2}
+\newcommand\cubed{{}^3}
+%
+% Scale
+\newcommand\milli{\unit{m}}
+\newcommand\centi{\unit{c}}
+\newcommand\kilo{\unit{k}}
+\newcommand\mega{\unit{M}}
+%
+% Percent
+\newcommand\percent{\unit{{\kern-4mu}\%}}
+%
+% Angle
+\newcommand\radian{\unit{rad}}
+\newcommand\degree{\unit{{\kern-4mu}^\circ}}
+%
+% Time
+\newcommand\second{\unit{s}}
+\newcommand\s{\second}
+\newcommand\minute{\unit{min}}
+\newcommand\hour{\unit{h}}
+%
+% Distance
+\newcommand\meter{\unit{m}}
+\newcommand\m{\meter}
+\newcommand\inch{\unit{in}}
+\newcommand\foot{\unit{ft}}
+%
+% Force
+\newcommand\newton{\unit{N}}
+\newcommand\kip{\unit{kip}} % kilopound in &quot;freedom&quot; units - edit made by Sri
+%
+% Mass
+\newcommand\gram{\unit{g}}
+\newcommand\g{\gram}
+\newcommand\kilogram{\unit{kg}}
+\newcommand\kg{\kilogram}
+\newcommand\grain{\unit{grain}}
+\newcommand\ounce{\unit{oz}}
+\newcommand\pound{\unit{lbs}}
+%
+% Temperature
+\newcommand\kelvin{\unit{K}}
+\newcommand\K{\kelvin}
+\newcommand\celsius{\unit{{\kern-4mu}^\circ C}}
+\newcommand\C{\celsius}
+\newcommand\fahrenheit{\unit{{\kern-4mu}^\circ F}}
+\newcommand\F{\fahrenheit}
+%
+% Area
+\newcommand\sqft{\unit{sq\,\foot}}  % square foot
+%
+% Volume
+\newcommand\liter{\unit{L}}
+\newcommand\gallon{\unit{gal}}
+%
+% Frequency
+\newcommand\hertz{\unit{Hz}}
+\newcommand\rpm{\unit{rpm}}
+%
+% Voltage
+\newcommand\volt{\unit{V}}
+\newcommand\V{\volt}
+\newcommand\millivolt{\milli\volt}
+\newcommand\mV{\milli\volt}
+\newcommand\kilovolt{\kilo\volt}
+\newcommand\kV{\kilo\volt}
+%
+% Current
+\newcommand\ampere{\unit{A}}
+\newcommand\A{\ampere}
+\newcommand\milliampereA{\milli\ampere}
+\newcommand\mA{\milli\ampere}
+\newcommand\kiloampereA{\kilo\ampere}
+\newcommand\kA{\kilo\ampere}
+%
+% Resistance
+\newcommand\ohm{\Omega}
+\newcommand\milliohm{\milli\ohm}
+\newcommand\kiloohm{\kilo\ohm} % correct SI spelling
+\newcommand\kilohm{\kilo\ohm} % &quot;American&quot; spelling used in siunitx
+\newcommand\megaohm{\mega\ohm} % correct SI spelling
+\newcommand\megohm{\mega\ohm} % &quot;American&quot; spelling used in siunitx
+%
+% Capacitance
+\newcommand\farad{\unit{F}}
+\newcommand\F{\farad}
+\newcommand\microfarad{\micro\farad}
+\newcommand\muF{\micro\farad}
+%
+% Inductance
+\newcommand\henry{\unit{H}}
+\newcommand\H{\henry}
+\newcommand\millihenry{\milli\henry}
+\newcommand\mH{\milli\henry}
+%
+% Power
+\newcommand\watt{\unit{W}}
+\newcommand\W{\watt}
+\newcommand\milliwatt{\milli\watt}
+\newcommand\mW{\milli\watt}
+\newcommand\kilowatt{\kilo\watt}
+\newcommand\kW{\kilo\watt}
+%
+% Energy
+\newcommand\joule{\unit{J}}
+\newcommand\J{\joule}
+%
+% Composite units
+%
+% Torque
+\newcommand\ozin{\unit{\ounce}\,\unit{in}}
+\newcommand\newtonmeter{\unit{\newton\,\meter}}
+%
+% Pressure
+\newcommand\psf{\unit{psf}}  % pounds per square foot
+\newcommand\pcf{\unit{pcf}}  % pounds per cubic foot
+\newcommand\pascal{\unit{Pa}}
+\newcommand\Pa{\pascal}
+\newcommand\ksi{\unit{ksi}} % kilopound per square inch
+\newcommand\bar{\unit{bar}}
+\end{aligned}\end{align} \]</div>
+<p><span class="raw-html"></div></span></p>
+<p>Jul 04, 2026 | 1418 words | 14 min read</p>
+<section class="tex2jax_ignore mathjax_ignore" id="demo-presentation-25-points">
+<h1><span class="section-number">8.3. </span>Demo Presentation - 25 points<a class="headerlink" href="#demo-presentation-25-points" title="Link to this heading">#</a></h1>
+<section id="task-instructions">
+<h2><span class="section-number">8.3.1. </span>Task Instructions<a class="headerlink" href="#task-instructions" title="Link to this heading">#</a></h2>
+<p>For the individual project, you will deliver a <strong>professional presentation and live
+demonstration</strong> of your project to a small group of peers in the course.  In addition to
+presenting, you will also <strong>evaluate your peers’ presentations using a provided
+rubric</strong>.</p>
+<p>Presentations will take place during class 16A (April 28th).  You will be placed into
+groups with 5 other students (groups of 6 total) and will give your presentation during
+class.  We will use Zoom to present the presentations so that they can be recorded and
+reviewed by the teaching team.</p>
+<p>Each student will have <strong>5 to 10 minutes</strong> to present, and presentations will be stopped
+if they exceed the 10-minute limit, so it is important to practice and manage your time
+carefully.  Use the provided PowerPoint template to create a clear and professional
+presentation.  Your audience will consist of fellow ENGR 13300 students who have a
+general engineering background but may not be familiar with your specific project topic,
+so be sure to tailor your explanations accordingly.</p>
+<p>Please download the template <a class="reference download internal" download="" href="../../_downloads/bf37f9fe35d7b20ff2f40800bc8c57fb/ip_ind_presentation_username.pptx"><code class="xref download docutils literal notranslate"><span class="pre">ip_ind_presentation_username.pptx</span></code></a> and save it
+as <span class="pasted-text">ip_ind_demo_username.pdf</span>.
+Be sure to replace <code class="docutils literal notranslate"><span class="pre">username</span></code> with your Purdue username.</p>
+</section>
+<section id="presentation-requirements">
+<h2><span class="section-number">8.3.2. </span>Presentation Requirements<a class="headerlink" href="#presentation-requirements" title="Link to this heading">#</a></h2>
+<section id="background-and-project-motivation-3-pts">
+<h3>1. Background and Project Motivation (3 pts)<a class="headerlink" href="#background-and-project-motivation-3-pts" title="Link to this heading">#</a></h3>
+<p>Your presentation must include enough background information to ensure that a
+general engineering audience can fully understand your project, even if they have
+no prior experience with your specific topic.  Begin by introducing the broader
+context of your project and clearly explaining any key terms, concepts, or processes
+that are necessary for understanding your work.  Avoid assuming prior knowledge, and
+define or simplify technical language when needed.  To support your explanation,
+incorporate relevant visuals such as images, diagrams, or flowcharts that help
+illustrate how your project works or the problem it addresses.  In addition, you
+should clearly explain your motivation for choosing this project by answering
+questions such as: What interested you in this topic?  What real-world problem or
+need does your project address?  Why is this problem important?  Finally, describe
+the significance and potential impact of your project by explaining how your solution
+could be used, who it benefits, and why it matters in a broader engineering or
+societal context.</p>
+</section>
+<section id="new-concept-3-pts">
+<h3>2. New Concept (3 pts)<a class="headerlink" href="#new-concept-3-pts" title="Link to this heading">#</a></h3>
+<p>As part of your project, you are required to incorporate at least one <strong>new concept,
+tool, or technique</strong> that has not been covered in class this semester.  In your
+presentation, you must clearly introduce and explain this new concept in a way that
+demonstrates your understanding, not just its use.  Begin by defining the concept and
+providing any necessary context so that your audience can follow along.  Then, explain
+how the concept functions at a high level (e.g., how it works, what it does, or how it
+is typically used in engineering or programming).  Next, describe specifically how you
+applied this concept within your project, including where it appears in your code or
+workflow and what role it plays in achieving your project’s goals.  Finally, justify
+your choice by explaining why you selected this concept.  What advantage it provides,
+how it improves your project, or why it was a good fit for solving your problem.</p>
+</section>
+<section id="code-demonstration-12-pts">
+<h3>3. Code Demonstration (12 pts)<a class="headerlink" href="#code-demonstration-12-pts" title="Link to this heading">#</a></h3>
+<p>You must include a <strong>live demonstration of your code</strong> by opening your program and
+running it in real time for the audience.  During the demonstration, clearly explain
+what your program does and guide the audience through how a user would interact with
+it.  This includes identifying all required <strong>user inputs</strong> (e.g., keyboard input,
+file input, parameters) and explaining how those inputs affect the program’s behavior.
+Walk through at least one complete example, so the audience can see the full process
+from input to output.  As your program runs, clearly point out and interpret the
+<strong>outputs</strong>, explaining what they mean and how they relate to your project’s goals.
+If applicable, highlight key features, edge cases, or interesting behaviors of your
+program.  Make sure your screen is easy to read (e.g., large font, zoomed-in view),
+and narrate your actions as you go, so the audience can follow along.  Your program
+should be fully functional and prepared ahead of time to ensure a smooth demonstration.</p>
+</section>
+<section id="conclusion-2-pts">
+<h3>4. Conclusion (2 pts)<a class="headerlink" href="#conclusion-2-pts" title="Link to this heading">#</a></h3>
+<p>Conclude your presentation with a thoughtful reflection on your experience developing
+this program.  Go beyond a simple summary by discussing what you found most
+interesting, surprising, or challenging during the project.  Describe specific skills,
+concepts, or problem-solving strategies you learned or improved, and explain how this
+project contributed to your growth as an engineering student.  You should also reflect
+on any obstacles you encountered and how you addressed them.  Finally, consider what
+you would do differently if you were to revisit this project.  This might include
+improving your code structure, adding new features, selecting a different approach, or
+refining your user experience.  If applicable, you may also briefly mention potential
+future improvements or extensions of your project to show deeper thinking about its
+continued development.</p>
+</section>
+</section>
+<section id="presentation-rubric">
+<h2><span class="section-number">8.3.3. </span>Presentation Rubric<a class="headerlink" href="#presentation-rubric" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-number">Table 8.5 </span><span class="caption-text">Presentation Rubric</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Criteria</p></th>
+<th class="head"><p>Fully Achieved</p></th>
+<th class="head"><p>Mostly Achieved</p></th>
+<th class="head"><p>Partially Achieved</p></th>
+<th class="head"><p>No Attempt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Background and Project Motivation</strong></p></td>
+<td><p>Provides clear, thorough background that is easy for a general audience to
+understand.  Explains the problem, context, and significance effectively.
+Motivation is well-articulated, including personal interest and real-world impact.
+Uses visuals (images/diagrams) to enhance understanding.
+<br><strong>(3 pts)</strong></p></td>
+<td><p>Provides some background, but explanations may lack clarity or depth.  Problem
+and motivation are mentioned but not fully developed.  Limited or unclear visuals.
+Audience understanding may be partial.
+<br><strong>(2 pts)</strong></p></td>
+<td><p>Background is minimal, unclear, or too technical for a general audience.  Motivation
+and problem are poorly explained or missing.  No helpful visuals.
+<br><strong>(1 pt)</strong></p></td>
+<td><p>No background or motivation provided.
+<br><strong>(0 pts)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>New Concept</strong></p></td>
+<td><p>Clearly defines and explains a new concept not covered in class.  Demonstrates
+strong understanding of how it works.  Effectively explains how it is used in the
+project and justifies why it was chosen.
+<br><strong>(3 pts)</strong></p></td>
+<td><p>Identifies a new concept but explanation is somewhat unclear or lacks depth.
+Connection to the project is present but not fully explained.  Limited
+justification.
+<br><strong>(2 pts)</strong></p></td>
+<td><p>Mentions a new concept but provides little to no explanation of how it works or how
+it is used.  Weak or missing justification.
+<br><strong>(1 pt)</strong></p></td>
+<td><p>No new concept included or does not meet requirement.
+<br><strong>(0 pts)</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Code Demonstration</strong></p></td>
+<td><p>Provides a clear, well-prepared live demonstration.  Program runs successfully.
+Thoroughly explains program purpose, user inputs, and outputs.  Walks through a
+complete example.  Highlights key features and communicates clearly throughout.
+Demo is easy to follow and visually readable.
+<br><strong>(12 pts)</strong></p></td>
+<td><p>Demonstration is partially complete or somewhat difficult to follow.  Explains
+inputs and outputs but may lack detail or clarity in some areas.  Example is shown
+but may be incomplete or rushed.
+<br><strong>(8 pts)</strong></p></td>
+<td><p>Demonstration is unclear, incomplete, or difficult to understand.  Little
+explanation of how the program works.  Significant issues with execution.
+<br><strong>(4 pts)</strong></p></td>
+<td><p>No demonstration provided.
+<br><strong>(0 pts)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Conclusion and Reflection</strong></p></td>
+<td><p>Provides a thoughtful and specific reflection.  Clearly explains learning,
+challenges, and future improvements.  Demonstrates insight into personal growth and
+project development.
+<br><strong>(2 pts)</strong></p></td>
+<td></td>
+<td><p>Reflection is present but somewhat general or lacks depth.  Mentions learning or
+changes but with limited detail.
+<br><strong>(1 pt)</strong></p></td>
+<td><p>No reflection or extremely minimal response.
+<br><strong>(0 pts)</strong></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Overall Presentation</strong></p></td>
+<td><p>Presentation is well-organized, clear, and engaging.  Slides are professional,
+visually effective, and easy to read.  Speaker communicates confidently, maintains
+appropriate pacing, and does not rely heavily on reading from slides.  Stays within
+time limits.  Transitions between sections are smooth.
+<br><strong>(5 pts)</strong></p></td>
+<td><p>Presentation is generally clear and organized.  Slides are readable but may be
+slightly cluttered or inconsistent.  Speaker communicates effectively with minor
+reliance on notes or slides.  Slight issues with pacing or timing.
+<br><strong>(3.5 pts)</strong></p></td>
+<td><p>Presentation lacks clear organization.  Slides are difficult to read or poorly
+designed.  Speaker has difficulty communicating ideas clearly or relies heavily
+on reading.  Poor time management.
+<br><strong>(2 pts)</strong></p></td>
+<td><p>Presentation is unclear, incomplete, or not delivered.  Significant issues with
+communication, organization, and professionalism.
+<br><strong>(0 pts)</strong></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="peer-review-survey-link">
+<h3>Peer Review Survey Link<a class="headerlink" href="#peer-review-survey-link" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://purdue.ca1.qualtrics.com/jfe/form/SV_b2Z3PMNOsp2GwPc">https://purdue.ca1.qualtrics.com/jfe/form/SV_b2Z3PMNOsp2GwPc</a></p>
+</section>
+</section>
+<section id="presentation-group-zoom-links">
+<h2><span class="section-number">8.3.4. </span>Presentation Group Zoom Links<a class="headerlink" href="#presentation-group-zoom-links" title="Link to this heading">#</a></h2>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+S 002 (9:30 AM - 11:20 AM)</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Group</p></th>
+<th class="head text-center"><p>Zoom Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Group 1</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/96399565140">https://purdue-edu.zoom.us/j/96399565140</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 2</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/98220837889">https://purdue-edu.zoom.us/j/98220837889</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 3</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/94683728840">https://purdue-edu.zoom.us/j/94683728840</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 4</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/94856089924">https://purdue-edu.zoom.us/j/94856089924</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 5</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/96506006445">https://purdue-edu.zoom.us/j/96506006445</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 6</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/99460674012">https://purdue-edu.zoom.us/j/99460674012</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 7</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/96687233035">https://purdue-edu.zoom.us/j/96687233035</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+S 003 (11:30 AM - 1:20 PM)</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Group</p></th>
+<th class="head text-center"><p>Zoom Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Group 1</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/94332418003">https://purdue-edu.zoom.us/j/94332418003</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 2</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/92370021267">https://purdue-edu.zoom.us/j/92370021267</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 3</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/96642721484">https://purdue-edu.zoom.us/j/96642721484</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 4</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/91032117792">https://purdue-edu.zoom.us/j/91032117792</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 5</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/97629560037">https://purdue-edu.zoom.us/j/97629560037</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 6</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/94424289872">https://purdue-edu.zoom.us/j/94424289872</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 7</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/92984147717">https://purdue-edu.zoom.us/j/92984147717</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 8</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/97238187578">https://purdue-edu.zoom.us/j/97238187578</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 9</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/99578191477">https://purdue-edu.zoom.us/j/99578191477</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 10</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/92665776505">https://purdue-edu.zoom.us/j/92665776505</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 11</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/93039630865">https://purdue-edu.zoom.us/j/93039630865</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 12</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/92291756225">https://purdue-edu.zoom.us/j/92291756225</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 13</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/98914031322">https://purdue-edu.zoom.us/j/98914031322</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+S 001 (1:30 PM - 3:20 PM)</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-center"><p>Group</p></th>
+<th class="head text-center"><p>Zoom Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Group 1</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/99923863843">https://purdue-edu.zoom.us/j/99923863843</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 2</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/91717259711">https://purdue-edu.zoom.us/j/91717259711</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 3</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/93702452697">https://purdue-edu.zoom.us/j/93702452697</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 4</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/98442827307">https://purdue-edu.zoom.us/j/98442827307</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 5</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/96948353458">https://purdue-edu.zoom.us/j/96948353458</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 6</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/95443096066">https://purdue-edu.zoom.us/j/95443096066</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 7</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/99934005929">https://purdue-edu.zoom.us/j/99934005929</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 8</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/91202043993">https://purdue-edu.zoom.us/j/91202043993</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 9</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/96841960389">https://purdue-edu.zoom.us/j/96841960389</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 10</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/96380602466">https://purdue-edu.zoom.us/j/96380602466</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 11</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/92110334627">https://purdue-edu.zoom.us/j/92110334627</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 12</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/97046915711">https://purdue-edu.zoom.us/j/97046915711</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 13</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/97357175084">https://purdue-edu.zoom.us/j/97357175084</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Group 14</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/98633034260">https://purdue-edu.zoom.us/j/98633034260</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Group 15</p></td>
+<td class="text-center"><p><a class="reference external" href="https://purdue-edu.zoom.us/j/93999432389">https://purdue-edu.zoom.us/j/93999432389</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="how-to-log-in-to-zoom-using-your-purdue-zoom-account">
+<h3>How to log in to Zoom using your Purdue Zoom account<a class="headerlink" href="#how-to-log-in-to-zoom-using-your-purdue-zoom-account" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p>Open Zoom and select SSO (single sign-on) from the login screen. You may need to log
+out of your personal Zoom account before you can log in using your Purdue account.</p>
+<figure class="align-default" id="id2">
+<img alt="Zoom login screen with SSO, Apple, Google, and Facebook sign-in options." class="shadow" src="../../_images/zoom_sso.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8.1 </span><span class="caption-text">Select SSO from the Zoom login screen.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">purdue-edu</span></code> as the company domain and click <span class="guilabel">Continue</span>.  Note the
+hyphen <code class="docutils literal notranslate"><span class="pre">-</span></code>, between <code class="docutils literal notranslate"><span class="pre">purdue</span></code> and <code class="docutils literal notranslate"><span class="pre">edu</span></code>.</p>
+<figure class="align-default" id="id3">
+<img alt="Zoom SSO screen with the company domain field filled in as &quot;purdue-edu&quot;." class="shadow" src="../../_images/zoom_purdue-edu.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8.2 </span><span class="caption-text">Enter <code class="docutils literal notranslate"><span class="pre">purdue-edu</span></code> as the company domain.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Log in with your Purdue credentials, and then you can use the link above to join the
+Zoom meeting.</p>
+<figure class="align-default" id="id4">
+<img alt="Purdue University login page with Login, Password fields, and BoilerKey logo." class="shadow" src="../../_images/purdue_authentication.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 8.3 </span><span class="caption-text">Log in with your Purdue credentials.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+</section>
+</section>
+<section id="deliverables">
+<h2><span class="section-number">8.3.5. </span>Deliverables<a class="headerlink" href="#deliverables" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="deliverables table" id="tab-ip-demo-deliverables">
+<caption><span class="caption-number">Table 8.6 </span><span class="caption-text">Deliverables</span><a class="headerlink" href="#tab-ip-demo-deliverables" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Deliverables</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="pasted-text">ip_ind_demo_username.pdf</span></p></td>
+<td><p>Your completed demo presentation in PDF format.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./Part_3_Projects/M5_Individual_Project"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="2_code_guidelines.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">8.2. </span>Code - 55 points</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="4_report_guidelines.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">8.4. </span>Report - 25 points</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#task-instructions">8.3.1. Task Instructions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-requirements">8.3.2. Presentation Requirements</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#background-and-project-motivation-3-pts">1. Background and Project Motivation (3 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-concept-3-pts">2. New Concept (3 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-demonstration-12-pts">3. Code Demonstration (12 pts)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion-2-pts">4. Conclusion (2 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-rubric">8.3.3. Presentation Rubric</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-survey-link">Peer Review Survey Link</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-group-zoom-links">8.3.4. Presentation Group Zoom Links</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-log-in-to-zoom-using-your-purdue-zoom-account">How to log in to Zoom using your Purdue Zoom account</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deliverables">8.3.5. Deliverables</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By <a href="/2026-spring/Appendices/contributors.html">Contributors</a>
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025 All rights reserved..
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
